@@ -10,6 +10,7 @@
    <?php
    $name ="Nhlalala"; 
    echo "Hello hi ".$name;
+   echo"welcome to my php";
    ?>
 </body>
 </html>
