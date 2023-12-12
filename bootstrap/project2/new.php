@@ -9,7 +9,7 @@
     <h1>Welcome</h1>
    <?php
    $name ="Nhlalala"; 
-   echo "Hello hi".$name;
+   echo "Hello hi ".$name;
    ?>
 </body>
 </html>
