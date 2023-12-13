@@ -8,14 +8,15 @@
 <body>
     <h1>Welcome</h1>
     <?php
-    const static_pay = 'pay'; 
+   /* const static_pay = 'pay'; 
    echo static_pay;
+   
       
-   /* if(true)
+   if(true)
     {
         
         define('static_pay','paid');
-    }*/
+    }
     
        class Person
        {
@@ -37,12 +38,38 @@
 
        $myHuman = new Person(18,5.7,"Nhlalala"); 
        //returning values not displaying :(
-
+        */
+        
        echo strlen("<br\nhello world");//length
        
        echo str_word_count("<br\nhello world");//number of words
-       echo strpos("hello Nhlalala","Nhlalala");// searching text
+       echo strpos("<br\nhello Nhlalala","Nhlalala");// searching text
+       echo strtoupper("<br\nNhlalala"); // uppercases
+       echo strtolower("br\nNhlalala"); // lowercase
+       $word =" hello Nhlalala ";
+       echo str_replace(" Nhlalala","lala",$word);
+       echo trim($word);
 
+       $y = explode(" ",$word);
+       print_r($y);
+
+//slicing/ substring
+    echo substr("<br\n>".$word,0,6);
+
+    // Navigating the length
+    echo substr("<br\n>".$word , 5,-3);
+//escape characters
+echo"<br\n";
+    echo "The more you take , the more you leave behind.\"what am i?\"";
+//numeric strings
+        $n = 78;
+        var_dump(is_numeric($n));
+        $x = "59.85" + 100;
+        var_dump(is_numeric($n));
+
+        $z=10.9;
+        $int_cast =(int)$z;
+        echo $int_cast;
     ?>
 </body>
 </html>
