@@ -21,11 +21,29 @@
     }
     myFuction("Blue<br\n");
     myFuction("Green");
+    echo "<br\n";
+    function addNums($a,$b)
+    {
+        return $a + $b;
 
+    }
+    $results = addNums(5,2);
+    echo "The answer is: $results";
+    echo "<br\n";
    
-    function myNums($numbers){
-        $numbers =1;
-        $sum=0;
+    function nums($numbs)
+    {
+        for($i =1;$i<=$numbs;$i++)
+        {
+            echo $i." ";
+        }
+    }
+    nums(20);
+    
+
+    /*function myNums(){
+       $numbers =1;
+       $sum=0;
         do
      {
         if($numbers %2 === 20)
@@ -33,17 +51,17 @@
             $sum=$numbers++;
         }
         else{
-            $sum=-1;
+            $sum=0;
         }
-
+        
      }while($numbers <=20);
 
      echo "Sum = $numbers";   
-    
+    return $sum;
     
     }
-
-    myNums("10");
+        :( :)
+    myNums();*/
      
     ?>
 </body>
