@@ -35,8 +35,9 @@
         }
        }
 
-       $myHuman = new Person(18,5.7,"name"); 
+       $myHuman = new Person(18,5.7,"Nhlalala"); 
        //returning values not displaying :(
+
        echo strlen("<br\nhello world");//length
        
        echo str_word_count("<br\nhello world");//number of words
