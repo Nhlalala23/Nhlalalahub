@@ -45,6 +45,12 @@ $y=0;
     {
         echo "$value <br\n>";
     }
+    $age =array("lala"=>"23","Pretty"=>"27");
+    foreach($age as $x=> $val)
+    {
+        echo"$x = $val<br>";
+    }
+    
     ?>
 </body>
 </html>

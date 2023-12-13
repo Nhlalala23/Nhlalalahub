@@ -70,6 +70,10 @@ echo"<br\n";
         $z=10.9;
         $int_cast =(int)$z;
         echo $int_cast;
+
+        
     ?>
+
+  
 </body>
 </html>
