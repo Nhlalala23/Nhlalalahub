@@ -11,7 +11,7 @@
    $x=20;
    $y=&$x;
    $x=15;
-   var_dumb($z=5);
+   $z=5;
    $name ="Nhlalala"; 
    echo "Hello hi ".$name;
    echo"<br><n></n>welcome to my php ";
