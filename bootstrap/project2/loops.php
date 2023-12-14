@@ -50,6 +50,25 @@ $y=0;
     {
         echo"$x = $val<br>";
     }
+
+    $num=1;
+    while($num<11)
+    {
+        echo"Enter a number:";
+        $num = readline();
+        echo"<br\n";
+        if ($num >76)
+        {
+            echo"you lose!<br\n";
+
+        }
+        else{
+            echo"way to go!<br\n";
+            $num++;
+        }
+    }
+
+    
     
     ?>
 </body>
