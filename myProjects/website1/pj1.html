@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <Head>
+      <meta charset="UTF-8">
+      <title>Clock-in/Clock-out System</title> 
+
+    </Head>
+    <body>
+        <div class ="container">
+          
+           <h1>Welcome to the Clock-in/Clock-out system</h1> 
+           <form action="process.php" method="post">
+            <input type="submit" name="clock_in" value="clock In">
+            <input type="submit" name="clock_out" value="Clock out">
+
+           </form>
+           <h2>Register</h2>
+           <form action="register.php" method="post">
+            <input type="text" name="name" placeholder="Name" required><br><br>
+            <input type="work_id" name="work_id" placeholder="work_ID" required><br><br>
+            <input type="password" name="password" placeholder="Password" required><br><br>
+            <input type="submit" name="register" value="Register">
+
+            
+           </form>
+           <h3>Login</h3>
+           <form action ="login.php" method = "post">
+            <input type="text" name="username" placeholder="Username" required><br><br>
+            <input type="password" name="password" placeholder="Password" required><br><br>
+            <input type="submit" name="login" value="login">
+           </form>
+        </div>  
+    </body>
+</html>
