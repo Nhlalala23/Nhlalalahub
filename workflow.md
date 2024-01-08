@@ -10,6 +10,7 @@
                
                 <th>Stud_id</th> <!--th for table header-->
                 <th>stud_name</th>
+                
                 <th>subject</th>
                 <th>marks</th>
             
