@@ -8,5 +8,5 @@ functions...
 
 date 10/01/24
 -added css as a style within my html code 
--updated my <!--div--> part with href
+-updated my <!--div--> part with href(hyper links)
 - added a photo ( not showing so far).
