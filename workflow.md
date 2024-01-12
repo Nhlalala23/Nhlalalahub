@@ -19,6 +19,6 @@ date 11/01/24
 -adding information on SA and USA files 
 
 date:12/01/24
--folder: myproj2 , file: SA.html
--added outside URL 
--
+-folder: myproj2
+-file: SA.html - added outside URL 
+-fie:USA.html - added outside URL
