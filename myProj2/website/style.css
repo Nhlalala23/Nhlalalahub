@@ -7,3 +7,6 @@ h1{
 ul{
     list-style-type:circle ;
 }
+img{
+    width: 200px; height: 200px;
+}
