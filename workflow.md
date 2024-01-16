@@ -20,5 +20,18 @@ date 11/01/24
 
 date:12/01/24
 -folder: myproj2
--file: SA.html - added outside URL 
--fie:USA.html - added outside URL
+-created a new file activities.html 
+
+
+date: 15/01/24
+    Absent 
+
+date:16/01/2024
+folder:myproj2
+    -created: folder under myproj(website)
+            -created new files
+            -uploaded images
+            -included urls
+            -used extrenal css 
+        
+        -
