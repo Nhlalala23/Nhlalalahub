@@ -36,3 +36,4 @@ folder:myproj2
         
     date:17/01/24
 -Moved folder website from myprj2.
+-created new file(account.html) for creating accounts
