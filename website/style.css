@@ -9,7 +9,23 @@ ul{
 }
 img{
     width: 200px; height: 200px;
+    
 }
 ul{
     text-decoration: dotted;
 }
+img{
+    width: 200px; height: 200px;
+}
+address{
+    text-align: center;
+}
+body{
+    display:contents;
+    flex-wrap: wrap;
+   
+  
+}
+
+
+    
