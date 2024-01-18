@@ -34,11 +34,14 @@
         padding: 20px;
         background-color: white;
     }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
     </style>
     <body>
-       <!---<p>Contact information</p>
-        <address>nhlalala@gmail.com</address>
-       -->
+      
 
        <!--Adding contact information using classes-->
        <div class="contDetails">
@@ -47,6 +50,7 @@
        </div>
         <div class="contBox">
             <div class="contLeft">
+                <!--using foorm refereces...........-->
                <h3>sent us your request</h3>
                <!--adding form-->
                <form>
@@ -72,10 +76,20 @@
                            
                        </div>
 
+                    </div>
+                    <label>Message</label>
+                    <textarea rows="4" placeholder="Your message"></textarea> 
+                    <input type="submit" value="Submit">
+                    
                </form>
             </div>
+            <!--adiing contact information : needs more research-->
             <div class="contRight">
                 <h3>connect with us</h3>
+                <p>Email: </p>
+                <p>Diamond@gmail.com</p>
+                <p>phone:</p>
+                <p>+27 71 9081 888</p>
                 <h2></h2>
             </div>
         </div>
