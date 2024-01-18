@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <title>contacts</title>
     <link rel="stylesheet" href="style.css">
-
+    <!--using inline css to style only this page-->
     <style>
          
     p{
@@ -15,7 +15,7 @@
         font-family: cursive;
     }
     body{
-        background-color: 7FFFD4;
+        background-color: aquamarine;
     }
     .contDetails{
         width: 20%;
@@ -39,6 +39,8 @@
        <!---<p>Contact information</p>
         <address>nhlalala@gmail.com</address>
        -->
+
+       <!--Adding contact information using classes-->
        <div class="contDetails">
         <h2>Contact with us </h2>
         
@@ -46,6 +48,31 @@
         <div class="contBox">
             <div class="contLeft">
                <h3>sent us your request</h3>
+               <!--adding form-->
+               <form>
+                    <div class="row">
+                        <div class="group">
+                            <label> Name</label>
+                            <input type="text" placeholder="Your Name">
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="group">
+                            <label> phone</label>
+                            <input type="text" placeholder="+27 71 9081 888">
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                       <div class="group">
+                           <label> email</label>
+                           <input type="email" placeholder="email@gmail.com">
+                           
+                       </div>
+
+               </form>
             </div>
             <div class="contRight">
                 <h3>connect with us</h3>
