@@ -41,4 +41,9 @@ folder:myproj2
 -
 
 date 18/01/24
+Folder :website
 -on a process of fixing my contact page
+
+date:19/01/24
+-updated my contact page and myweb/home page
+-
