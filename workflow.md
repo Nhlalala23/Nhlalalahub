@@ -46,4 +46,8 @@ Folder :website
 
 date:19/01/24
 -updated my contact page and myweb/home page
+
+date:22/01/24
+-added navigation to index.html
+-added home page
 -
