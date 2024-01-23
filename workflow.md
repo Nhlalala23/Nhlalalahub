@@ -51,3 +51,8 @@ date:22/01/24
 -added navigation to index.html
 -added home page
 -
+
+date:23/01/24
+-trying to fix navigation bar
+-fixing home page
+-connecting styling page
