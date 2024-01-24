@@ -56,3 +56,7 @@ date:23/01/24
 -trying to fix navigation bar
 -fixing home page
 -connecting styling page
+
+date:24/01/24
+-fixing my pages
+-
