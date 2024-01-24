@@ -34,6 +34,28 @@ h1{
     text-align: center;
 }
 
-
+.contDetails{
+    width: 20%;
+  
+}
+.contBox{
+    background-color: white;
+    display: flex;
+}
+.contLeft{
+    flex-basis: 20%;
+    padding: 20px 60px;
+}
+.contRight{
+    flex-basis: 20%;
+    padding: 20px;
+    background-color:black;
+    color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
 
 
