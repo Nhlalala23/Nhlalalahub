@@ -5,7 +5,7 @@ nav{
 }
 nav ul{
     list-style: none;
-    margin-left: 70%;
+    margin-left: 60%;
 
 }
 nav li{ 
@@ -23,6 +23,7 @@ nav a{
     font-size: 20px ;
    color: white;
 }
+
 img{
     width:250px;
     height: 200px;
@@ -57,5 +58,21 @@ h1{
     justify-content: space-between;
     margin-bottom: 20px;
 }
-
-
+button {
+    border-radius: 15px;
+    background-color:#1888a7;
+    color: white;
+}
+form{
+    text-align: center;
+    margin-top: 100px;
+    
+}
+.log{
+    border: 150px;
+    background-color:none;
+    color: black;
+}
+p a{
+    text-align: center;
+}

@@ -59,4 +59,7 @@ date:23/01/24
 
 date:24/01/24
 -fixing my pages
--
+-updating style
+-removed target tag
+-link my index page to the nav bar
+- added a sign-in button
