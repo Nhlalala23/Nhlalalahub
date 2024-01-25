@@ -68,3 +68,4 @@ date :25/01/24
 -trying to style my home page
 -navigating pages the same way
 -adding new images on home page
+-adding social media icons
