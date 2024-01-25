@@ -27,7 +27,7 @@ nav a{
 img{
     width:250px;
     height: 200px;
-    margin-right: 8px;
+    margin-right: 12px;
     margin-top: 15px;
 }
 h1{
@@ -65,7 +65,7 @@ button {
 }
 form{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 40px;
     
 }
 .log{
@@ -73,6 +73,13 @@ form{
     background-color:none;
     color: black;
 }
-p a{
+p {
     text-align: center;
+}
+h2{
+    text-align: center;
+    font-family: cursive;
+}
+h3{
+    font-family: cursive;
 }
