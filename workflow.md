@@ -69,3 +69,7 @@ date :25/01/24
 -navigating pages the same way
 -adding new images on home page
 -adding social media icons
+
+date:26/01/24
+-trying to fix product page
+-navigating within a page(product page)
