@@ -77,4 +77,9 @@ date:26/01/24
 
 date:30/01/24
 -Having a meeting with Teddy
--
+-folder: Myprojects:
+         file:Project1
+-Created an index file
+-uploaded images
+-links - for regestration
+
