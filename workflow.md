@@ -16,7 +16,7 @@ date 11/01/24
 -updated myfile.html by fixing URLs
 -created new files (SA.html & USA.html )
 -uploaded pictures 
--adding information on SA and USA files 
+-adding information on SA and USA files k
 
 date:12/01/24
 -folder: myproj2
@@ -34,7 +34,7 @@ folder:myproj2
             -included urls
             -used extrenal css 
         
-    date:17/01/24
+date:17/01/24
 -Moved folder website from myprj2.
 -created new file(account.html) for creating accounts
 -used form
@@ -73,3 +73,8 @@ date :25/01/24
 date:26/01/24
 -trying to fix product page
 -navigating within a page(product page)
+
+
+date:30/01/24
+-Having a meeting with Teddy
+-
