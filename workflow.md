@@ -83,3 +83,9 @@ date:30/01/24
 -uploaded images
 -links - for regestration
 
+date:31/01/24
+- connecting CSS and html
+-changing contact page to account
+-styling home page
+
+
