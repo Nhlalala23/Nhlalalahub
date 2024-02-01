@@ -89,6 +89,14 @@ date:31/01/24
 -styling home page
 -adding border to index page
 -adding baackground image
+
+
+date 01/02/24
+-Creacting new web
+-folder :myweb
+-adding vertical navigation to homepage
+-changing the website idea from to stokvel
 -
+
 
 

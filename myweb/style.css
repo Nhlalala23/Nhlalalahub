@@ -1,3 +1,53 @@
+.border{
+    border:solid;
+    color: black;
+    text-align: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   
+}
+nav{
+    display: block;
+    background-color: black;
+    color: white;
+}
+nav ul{
+    list-style: none;
+    margin-left: 70%;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+   justify-content: space-between;
+   padding-right: 40px; 
+}
+nav a{
+    font-size: 30px;
+    color: white;
+}
+h1{
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*nav{
     display: block;
     background-color: black;
@@ -33,7 +83,9 @@ body{
     background-color: rgba(0, 0, 0, 0.719);
     color: white;
 }*/
-.logo{
+
+/*Vertical navigation bar*/
+/*.logo{
     width:250px
 }
 .logo a{
@@ -45,4 +97,4 @@ body{
 }
 nav li{
     list-style: none;
-}
+}*/
