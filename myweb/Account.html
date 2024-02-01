@@ -3,7 +3,9 @@
     <meta charset="UTF-8">
 
     <title>Account</title>
+    <link rel="stylesheet" href="style.css">
     <body>
+        <h2>Create your Account</h2>
         <form action="actionPage">
             <!--Creating account
            - user will create account using their info details.
@@ -19,10 +21,16 @@
             <input type="text" id="Surname" placeholder="Enter your Surname"><br>
 
             <label for="password">Password1</label><br>
-            <input type="password" id="Paswd" placeholder="Create your password"><br>
+            <input type="password" id="Paswd" placeholder="Create your password"  pattern="(?.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain 1 number and uppercase and lowercase letter, and 8 or more characters" required><br>
+            <label for="name">Password2</label><br>
+            <input type="password" id="passwd" placeholder="Confirm your password"><br>
+           <br>
+            <!--Submit button-->
+            <label for="button">Submit</label>
+            <input type="button" id="submit" value="Send"><br>
 
-            <label for="name">Password2</label>
-            <input type="password" id="passwd" placeholder="Confirm your password">
+
         </form>
+        
     </body>
 </html>

@@ -95,7 +95,8 @@ date 01/02/24
 -Creacting new web
 -folder :myweb
 -adding vertical navigation to homepage
--changing the website idea from to stokvel
+-changing the website idea from music to stokvel
+-Adding navigation bar and navigating withing a home page
 -
 
 
