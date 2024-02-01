@@ -1,0 +1,48 @@
+/*nav{
+    display: block;
+    background-color: black;
+    color: white;
+}
+div{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+nav ul{
+    list-style: none;
+    margin-left: 70%;
+   
+}
+nav li{
+    display: inline-block;
+    
+   justify-content: space-between;
+   padding-right: 40px; 
+  
+  
+}
+nav a{
+    font-size: 30px;
+    color: white;
+}
+.logo{
+    font-size: 45px;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.719);
+    color: white;
+}*/
+.logo{
+    width:250px
+}
+.logo a{
+    background-color: black;
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+nav li{
+    list-style: none;
+}
