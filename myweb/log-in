@@ -26,7 +26,7 @@
             
             <input type="password" id="pswd" placeholder="Enter your Password"><br>
             <br>
-            <input type="button" id="submit" value="Send"><br>
+            <input type="button" id="submit" value="Send"><a href="myAccount.html"></a><br>
          </form>
     </body>
 </html>
