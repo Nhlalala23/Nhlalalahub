@@ -100,5 +100,10 @@ date 01/02/24
 -adding form to account and log-in pages 
 -
 
+date 02/02/24
+-adding infoto home page (about us,services)
+-adding styles
+-ceating a page for users to create new groups
+
 
 
