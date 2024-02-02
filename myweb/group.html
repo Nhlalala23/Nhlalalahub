@@ -6,11 +6,30 @@
 
     <title>Groups</title>
     <body>
+        <nav class="Bar">
+            <div class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Account.html">Sign-up</a></li>
+                    <li><a href="log-in">Log-In</a></li>
+
+                </ul>
+            </div>
+           
+
+        </nav>
+        <!--Creating groups and sharing links to other users-->
         <div class="group">
             <h2>Create a new group</h2>
             <label for="groupName"> Group name</label><br>
-            <input type="text" id="groupName" placeholder="Enter a group name"><br>
-            <button>Create a Group</button>
+            <input type="text" id="groupName" placeholder="Enter a group name"><br><br>
+
+            <input type="text" is="decrpt" placeholder="Group description"><br><br>
+            <button>Create a Group</button><br><br>
+            <p>Share a group link to others.</p>
+            <button onclick="ShareLink"> Share a link </button>
         </div>
+
+        
     </body>
 </html>
