@@ -36,6 +36,7 @@ input{
     padding: 6px 20px;
     display: inline-block;
     border-radius: 4px;
+    justify-content: space-between;
 
 }
 input[type=button]{
@@ -49,9 +50,10 @@ form{
 }
 h2{
     text-align: center;
-    padding-top: 10%;
+    padding-top: 5%;
     font-family: cursive;
 }
+
 /*.img{
     background-image: url(money.webp);
     background-size: cover;
