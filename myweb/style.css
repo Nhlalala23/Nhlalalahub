@@ -1,17 +1,19 @@
 .border{
     border:solid;
-    color: black;
+    /*color: black;*/
     text-align: center;
-   padding-top: 20px;
-   padding-bottom: 20px;
- 
-   
-   
+    background-color: goldenrod;
+    color:black;
+   padding-top: 15px;
+   padding-bottom: 20px; 
+  margin-left: 70px;
+  margin-right: 70px;
 }
 nav{
     display: block;
     background-color: black;
-    color: white;
+    color: goldenrod;
+    
 }
 nav ul{
     list-style: none;
@@ -22,10 +24,12 @@ nav li{
     list-style: none;
    justify-content: space-between;
    padding-right: 30px; 
+ 
+ 
 }
 nav a{
     font-size: 30px;
-    color: white;
+    color: goldenrod;
 }
 h1{
     text-align: center;
@@ -67,7 +71,10 @@ h2{
 div{
     text-align: center;
 }
-
+body{
+    background-color: black;
+    color: goldenrod;
+}
 
 
 
