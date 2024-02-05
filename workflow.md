@@ -105,4 +105,7 @@ date 02/02/24
 -adding styles
 -ceating a page for users to create new groups
 -created a page where users will share group
--and users will be able to join 
+-and users will be able to join
+
+date: 05/02/24
+-trying to style all pages
