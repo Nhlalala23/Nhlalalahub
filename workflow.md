@@ -109,3 +109,5 @@ date 02/02/24
 
 date: 05/02/24
 -trying to style all pages
+-starting with php: folder learning php: file myfirst.php
+-on a meeting with teddy learning php
