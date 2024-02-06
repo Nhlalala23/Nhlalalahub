@@ -12,24 +12,51 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     //htmlspecialchars --covents predefined characters to hmtl entities
     //"--to avoid injecting code to the form or avoid hacking "
     
+    //validating first name 
     if(empty($_POST["Fname"])) // check if the field is empty
     {
         $FnameErr ="Name is required";
     }
     else{
-        $FName = test($_POST["Fname"]);
-        if(!preg_match("/^[a-zA-Z-' ]*$",$FName)) //preg_match searches for a string pattern
+        $Fname = test( $Fname=htmlspecialchars($_POST["Fname"]));
+        if(!preg_match("/^[a-zA-Z-' ]*$",$Fname)) //preg_match searches for a string pattern
         {
             $FnameErr = "Only letters and space allowed";
         }
         
     }
-    $FName=htmlspecialchars($_POST["Fname"]);
-  
+
+    //validating Lname
+    if(empty($_POST["Lname"])) 
+    {
+        $LnameErr ="Last Name is required";
+    }
+    else{
+        $Lname = test( $Lname=htmlspecialchars($_POST["Lname"]));
+        if(!preg_match("/^[a-zA-Z-' ]*$",$Lname)) 
+        {
+            $LnameErr = "Only letters and space allowed";
+        }
+        
+    }
+   
+   //validating email
+   if(empty($_POST["Lname"])) 
+   {
+       $emailErr =" Email is  required";
+   }
+   else{
+       $Email = test($Email = htmlspecialchars($_POST["email"]));
+       if(!filter_var($Email,FILTER_VALIDATE_EMAIL)){
+        $Email ="Invalid email";
+       } 
+       
+       
+   }
     
 
-    $LName= htmlspecialchars($_POST["Lname"]);
-    $Email=htmlspecialchars($_POST["email"]);
+   // $LName= htmlspecialchars($_POST["Lname"]);
+   // $Email=htmlspecialchars($_POST["email"]);
 
 
 }
