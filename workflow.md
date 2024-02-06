@@ -113,4 +113,5 @@ date: 05/02/24
 -on a meeting with teddy learning php
 
 date:06/02/24
--Fixing my php code for form handling 
+-Fixing my php code for form handling
+- validating my form 
