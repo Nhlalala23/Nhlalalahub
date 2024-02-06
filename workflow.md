@@ -111,3 +111,6 @@ date: 05/02/24
 -trying to style all pages
 -starting with php: folder learning php: file myfirst.php
 -on a meeting with teddy learning php
+
+date:06/02/24
+-Fixing my php code for form handling 
