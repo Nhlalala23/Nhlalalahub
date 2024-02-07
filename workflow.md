@@ -115,3 +115,7 @@ date: 05/02/24
 date:06/02/24
 -Fixing my php code for form handling
 - validating my form 
+
+date: 07/02/24
+-submitted research on ERD and Database system planning
+-submitted ERD diagram for online shopping 
