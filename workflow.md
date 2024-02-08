@@ -119,3 +119,7 @@ date:06/02/24
 date: 07/02/24
 -submitted research on ERD and Database system planning
 -submitted ERD diagram for online shopping 
+
+date: 08/02/24
+-Submitted my database system planning 
+
