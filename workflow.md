@@ -123,3 +123,7 @@ date: 07/02/24
 date: 08/02/24
 -Submitted my database system planning 
 
+date: 09/02/24
+-Had a group meeting on new project
+-Going through a document about server-request and responses cycle
+
