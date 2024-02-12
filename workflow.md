@@ -127,3 +127,5 @@ date: 09/02/24
 -Had a group meeting on new project
 -Going through a document about server-request and responses cycle
 
+date: 12/02/24
+-Had a meeting based on the new project (with what to be done , timeline, and etc...)
