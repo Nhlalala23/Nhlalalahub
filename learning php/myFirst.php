@@ -80,9 +80,27 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     //date_default_timezone_set("America/New_york);
     //strtotime() 
     $d = strtotime("11:17am february 14 2023");
-    echo"Todays date is " . date("Y/m/d h:i:sa",$d);
+    echo"Todays date is " . date("Y/m/d h:i:sa",$d) ;
+echo "<br> <br>";
+ //file handling
+ // read file  function
+ echo readfile("file1.txt");
+ echo "<br> <br>";
+ $myfile = fopen("file1.txt","r") or die("unable to open a file!");
+ echo fread($myfile,filesize("file1.txt"));
+ fclose($myfile);
+
+ //  open file  function
+$my_file = fopen("testFile.txt","w") or die("unable to open a file");
+//writing 
+$my_name ="Nhlalala Mthombeni\n";
+fwrite($my_file,$my_name);
+$my_name ="CEO\n";
+fwrite($my_file,$my_name);
+fclose($my_file);
 
 }
+
 
 
 
