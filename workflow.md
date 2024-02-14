@@ -130,3 +130,6 @@ date: 09/02/24
 date: 12/02/24
 -Had a meeting based on the new project (with what to be done , timeline, and etc...)
 -ceated my database and tables
+
+date: 14/02/24
+-doing form validation 
