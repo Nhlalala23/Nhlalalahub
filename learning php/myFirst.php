@@ -69,6 +69,19 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             $email_err="Invalid email";
         }
     }
+
+
+    //date and time functions
+
+    echo "Registration date " . date("Y/m/d - l") ."<br>";
+    echo "Time registast: ". date("h:i:sa") ."<br>";
+
+    //for timezone
+    //date_default_timezone_set("America/New_york);
+    //strtotime() 
+    $d = strtotime("11:17am february 14 2023");
+    echo"Todays date is " . date("Y/m/d h:i:sa",$d);
+
 }
 
 
