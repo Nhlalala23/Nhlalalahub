@@ -37,17 +37,18 @@ echo "Connected";
  else {
     echo "<br> table not created";
  }
-
+ echo"<br>";
+ 
  //inserting data 
  $sql ="INSERT INTO Account(firstname,lastname,email)
- VALUES ('Nhlalala','Mthombeni',lalamthombeni@gmail.com')";
+ VALUES ('Nhlalala','Mthombeni','lala@gmail.com')";
 
  if($conn->query($sql)===TRUE)
  {
     echo"<br> added suceffully <br>";
  }
  else{
-    echo"<br> error inserting data to the database";
+   echo"Error: <br>" .$conn->error;
  }
  $conn->close();
 
