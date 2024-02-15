@@ -40,7 +40,7 @@ echo "Connected";
  echo"<br>";
  
  //inserting data 
- $sql ="INSERT INTO Account(firstname,lastname,email)
+ /*$sql ="INSERT INTO Account(firstname,lastname,email)
  VALUES ('Nhlalala','Mthombeni','lala@gmail.com')";
 
 $sql ="INSERT INTO Account(firstname,lastname,email)
@@ -56,12 +56,49 @@ VALUES ('JJ','brown','jj@gmail.com')";
  }
  else{
    echo"Error: <br>" .$conn->error;
+ }*/
+
+ //getting data from form
+ if($_SERVER["REQUEST_METHOD"] =="POST")
+ {
+    /*$name = $_REQUEST['Fname'];
+    $surname =$_REQUEST['Lname'];
+    $email =$_REQUEST['email'];
+
+    $sql = "INSERT INTO Account VALUES($name,
+    $surname,$email)";*/
+    $data =$_REQUEST['Fname'];
+    $data2 =$_REQUEST['Lname'];
+    $data3 =$_REQUEST['email'];
+  if(empty($data))
+  {
+    echo"data is empty <br>";
+  }
+  else{
+    echo"$data <br>";
+  }
+  if(empty($data2))
+  {
+    echo"data is empty <br>";
+  }
+  else{
+    echo"$data2 <br>";
+  }
+  if(empty($data3))
+  {
+    echo"data is empty <br>";
+  }
+  else{
+    echo"$data3 <br>";
+  }
  }
 
+ 
+ 
 
  //selecting data fromsql database
 
- $sql ="SELECT acc_id,firstname,email
+ /*$sql ="SELECT acc_id,firstname,email
   * FROM Account";
  $results = $conn->query($sql);
 
@@ -75,7 +112,7 @@ if($results-> num_rows>0)
 }
 else{
        echo "no results"; 
-}
+}*/
 
  $conn->close();
 
