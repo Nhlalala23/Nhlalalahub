@@ -43,13 +43,40 @@ echo "Connected";
  $sql ="INSERT INTO Account(firstname,lastname,email)
  VALUES ('Nhlalala','Mthombeni','lala@gmail.com')";
 
- if($conn->query($sql)===TRUE)
+$sql ="INSERT INTO Account(firstname,lastname,email)
+ VALUES ('lala','Mthombeni','my@gmail.com')";
+
+$sql ="INSERT INTO Account(firstname,lastname,email)
+VALUES ('JJ','brown','jj@gmail.com')";
+
+ if($conn->multi_query($sql)===TRUE) //multi_query is for multiple sql statements
  {
-    echo"<br> added suceffully <br>";
+    $last_id =$conn->insert_id;
+    echo"<br> added suceffully.<br> Last Id inserted is: $last_id";
  }
  else{
    echo"Error: <br>" .$conn->error;
  }
+
+
+ //selecting data fromsql database
+
+ $sql ="SELECT acc_id,firstname,email
+  * FROM Account";
+ $results = $conn->query($sql);
+
+if($results-> num_rows>0)
+{
+    while($row =$results->fetch_assoc())
+    {
+        echo "acc_id" . $row["acc_id"] ." - Name: " . $row["firsname"] . " " .$row["email"]. "<br>";
+    }
+    
+}
+else{
+       echo "no results"; 
+}
+
  $conn->close();
 
 ?>
