@@ -135,3 +135,7 @@ date: 14/02/24
 -doing form validation 
 -date and time functions
 -Learning file handling
+
+date: 15/02/24
+-creating table
+-insering data 
