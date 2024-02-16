@@ -140,3 +140,6 @@ date: 15/02/24
 -creating table
 -insering data 
 -commirted the wrong file
+
+date: 16/02/2024
+-trying to get data from a form

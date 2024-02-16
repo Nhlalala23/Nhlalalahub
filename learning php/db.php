@@ -1,4 +1,13 @@
 <?php
+
+//collecting form data
+
+$name = $_POST['Fname'];
+$surname = $_POST['Lname'];
+$email = $_POST['email'];
+
+
+
 //database
 
 $servername ="localhost";
@@ -18,9 +27,18 @@ if($conn->connect_error)
 }
 echo "Connected";
 
+//sql statememnt 
 
+$sql = "INSERT INTO Account (name,Lname,email) VALUES ('$name','$surname','$email')";
 
-// creating a table 
+if($conn->query($sql)===TRUE)
+{
+  echo"Data inserted sucessfully";
+}
+else{
+  echo"ERROR: ".$sql . "<br>" . $conn->error;
+}
+/* creating a table 
  $sql = "CREATE TABLE Account(
     acc_id INT(5) AUTO_INCREMENT PRIMARY KEY,
     firstname VARCHAR(30) NOT NULL,
@@ -37,7 +55,10 @@ echo "Connected";
  else {
     echo "<br> table not created";
  }
- echo"<br>";
+ echo"<br>";*/
+
+
+
  
  //inserting data 
  /*$sql ="INSERT INTO Account(firstname,lastname,email)
@@ -59,14 +80,14 @@ VALUES ('JJ','brown','jj@gmail.com')";
  }*/
 
  //getting data from form
- if($_SERVER["REQUEST_METHOD"] =="POST")
+ /*if($_SERVER["REQUEST_METHOD"] =="POST")
  {
     /*$name = $_REQUEST['Fname'];
     $surname =$_REQUEST['Lname'];
     $email =$_REQUEST['email'];
 
     $sql = "INSERT INTO Account VALUES($name,
-    $surname,$email)";*/
+    $surname,$email)";
     $data =$_REQUEST['Fname'];
     $data2 =$_REQUEST['Lname'];
     $data3 =$_REQUEST['email'];
