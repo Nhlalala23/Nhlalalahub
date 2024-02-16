@@ -143,3 +143,5 @@ date: 15/02/24
 
 date: 16/02/2024
 -trying to get data from a form
+-sucessfully added data form to database
+-new file "form.php"
