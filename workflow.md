@@ -141,7 +141,12 @@ date: 15/02/24
 -insering data 
 -commirted the wrong file
 
-date: 16/02/2024
+date: 16/02/24
 -trying to get data from a form
 -sucessfully added data form to database
 -new file "form.php"
+
+date 19/02/24
+-created new db
+-creating tables
+-

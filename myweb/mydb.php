@@ -1,8 +1,37 @@
 <?php
 
-
+//create a database
 
 $servername ="localhost";
+$username="root";
+$password ="";
+
+//connecting to mysql
+$conn =new mysqli($servername,$username,$password);
+
+//checking if connected
+if($conn->connect_error)
+{
+    die("Not connected: " .$conn->connect_error);
+}
+
+//creating a database
+$sql ="CREATE DATABASE webBd";
+
+if($conn->query($sql) === TRUE){
+    echo"Database created successfully";
+}
+else{
+    echo "Error : " . $conn->connect_error;
+}
+
+
+
+
+$conn->close();
+
+
+/*$servername ="localhost";
 $username ="root";
 $password="";
 //$database="stokveldb";
@@ -26,7 +55,7 @@ if($conn->connect_error)
  }
  /*else{
     echo"error creating database ";
- }*/
+ }
 
  //selecting a database
 
@@ -36,8 +65,8 @@ $conn->select_db("mystockveldb");
 
 $sql_table1 = "CREATE TABLE member(
     memb_id int(6)  UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    Fname VARCHAR(50) NOT NULL,
-    Lname VARCHAR(50) NOT NULL,
+    Fname VARCHAR(30) NOT NULL,
+    Lname VARCHAR(30) NOT NULL,
     email VARCHAR(50),
     home_addr VARCHAR(50)
 )";
@@ -49,7 +78,7 @@ else{
     echo "table not created";
 }
 
-$sql_table2 ="CREATE TABLE IF NOT EXISTS account(
+/*$sql_table2 ="CREATE TABLE IF NOT EXISTS account(
     acc_Id i int(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
@@ -63,10 +92,10 @@ if($conn->query($sql_table2)===TRUE)
 }
 else{
     echo "table not created";
-}
+}*/
 
 
-$sql_table3 ="CREATE TABLE IF NOT EXISTS contribution(
+/*$sql_table3 ="CREATE TABLE IF NOT EXISTS contribution(
     contr_Id int (6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     amount float(50),
     date_contr date
@@ -79,17 +108,40 @@ else{
     echo "table not created";
 }
 
-//checking if table is created suceffully
-/*if($conn->query($sql_table)===TRUE)
+$sql_table5 ="CREATE TABLE Account(
+    acc_id int (6)  
+    
+    
+    
+    UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    memb_id int(6)  UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    fname VARCHAR(30) NOT NULL,
+    lname VARCHAR(30) NOT NULL,
+    password1 VARCHAR(250),
+    password2 VARCHAR(250)                       
+    )";
+if($conn->query($sql_table5)===TRUE)
+{
+    echo"Table sucessfully created";
+}
+else{
+    echo "table not created";
+}
+
+
+
+
+/*checking if table is created suceffully
+if($conn->query($sql_table4)===TRUE)
 {
     echo"Table sucessfully created";
 }
 else{
     echo "table not created";
 }*/
- $conn->close();
-
-
-
 
 ?>
+
+
+
+
