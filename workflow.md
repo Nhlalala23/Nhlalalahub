@@ -149,4 +149,5 @@ date: 16/02/24
 date 19/02/24
 -created new db
 -creating tables
--
+-trying to connect tables with foreign keys
+
