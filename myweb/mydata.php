@@ -39,7 +39,9 @@ $sql1 ="CREATE TABLE member (
     Lname VARCHAR(30) NOT NULL,
     email VARCHAR(50),
     pass VARCHAR(250),
-    FOREIGN KEY(meb_id) REFERENCES member(meb_id)
+    memb_id INT
+    FOREIGN KEY(memb_id) REFERENCES member(meb_id),
+
    )";
 
       if($conn->query($sql2)===TRUE)
@@ -53,8 +55,7 @@ $sql1 ="CREATE TABLE member (
       $sql3 =" CREATE TABLE contribution(
         contr_id  INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         amount int (100),
-        contr_date date)
-      ";
+        contr_date date)";
 
 if($conn->query($sql3)===TRUE)
       {
@@ -66,13 +67,12 @@ if($conn->query($sql3)===TRUE)
 
       $sql4 ="CREATE TABLE memb_contr(
         contr_id INT,
-        meb_id ,
+        memb_id INT ,
         PRIMARY KEY (contr_id,meb_id)
         FOREIGN KEY(contr_id) REFERENCES contribution( contr_id)
-        FOREIGN KEY(meb_id) REFERENCES member(meb_id)
+        FOREIGN KEY(memb_id) REFERENCES member(meb_id)
 
-        )
-        ";
+        )";
 if($conn->query($sql4)===TRUE)
 {
     echo"Table created <br>";
@@ -80,5 +80,36 @@ if($conn->query($sql4)===TRUE)
 else{
     echo"Not created: " . $conn->error ."<br>";
 }
+
+$sql5 ="CREATE TABLE IF NOT EXISTS Transactions(
+    trans_id INT(6) AUTO_INCREMENT PRIMARY KEY,
+    amount int,
+    trans_date DATE,
+    status_trans VARCHAR(50)
+    )";
+
+    if($conn->query($sql5)===TRUE)
+    {
+        echo"Table created <br>";
+    }
+    else{
+        echo"Not created: " . $conn->error ."<br>";
+    }
+
+   /* $sql6 =" CREATE TABLE IF NOT EXISTS Memb_Trans(
+        memb_id INT,
+        trans_id INT,
+        PRIMARY KEY (memb_id, trans_id),
+        FOREIGN KEY(memb_id) REFERENCES member(meb_id),
+        FOREIGN KEY(trans_id) REFERENCES Transactions( trans_id)
+    )";
+
+if($conn->query($sql6)===TRUE)
+{
+    echo"Table created <br>";
+}
+else{
+    echo"Not created: " . $conn->error ."<br>";
+}*/
 
 ?>
