@@ -151,3 +151,6 @@ date 19/02/24
 -creating tables
 -trying to connect tables with foreign keys
 
+date: 20/02/24
+-Trying to fix errors and connecting tables 
+
