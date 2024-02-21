@@ -154,3 +154,5 @@ date 19/02/24
 date: 20/02/24
 -Trying to fix errors and connecting tables 
 
+date: 21/02/24
+- trying to create tables with foreign keys.
