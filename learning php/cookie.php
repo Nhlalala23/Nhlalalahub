@@ -3,8 +3,7 @@
 //creating cookies
 $cookie_name ="user";
 $cookie_value ="lala";
-setcookie($cookie_name,$cookie_value,time() + (86400 *30),"/"); // 86400 = 1day
-
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
 ?>
 
 <html>
@@ -15,7 +14,7 @@ setcookie($cookie_name,$cookie_value,time() + (86400 *30),"/"); // 86400 = 1day
     }
     else{
         echo"cookie '" .  $cookie_name . "' is set! <br>";
-        echo" value is: " . $_COOKIE[$cookie_value];
+        echo" value is:  " . $_COOKIE[$cookie_name] ."<br>";
     }
 
     //checking if cookies are enabled
