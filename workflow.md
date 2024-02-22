@@ -156,3 +156,6 @@ date: 20/02/24
 
 date: 21/02/24
 - trying to create tables with foreign keys.
+
+date: 22/02/24
+-starting with cookies.
