@@ -1,0 +1,43 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head> <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>mywebpage</title>
+    
+    </head> 
+   <body>
+    <h1>Form </h1>
+    <h2>Hello Enter your details below</h2>
+
+    <!-- form-->
+    <form action="login.php" method="post">
+      
+      <label for="Name">First Name</label>     
+      <input type="text" name="Fname" id="FirstName" placeholder=" Enter your First name"><span class="error">* <?php echo $name_err;?></span><br><br>
+ 
+      <label for="Name">Last Name</label>
+      <input type="text" name="Lname" id="LastName" placeholder=" Enter your Last name"><span class ="error">*<?php echo $surname_err?></span><br><br>
+       
+      <label for="Email">Email</label>
+      <input type="text" name="email" id="email" placeholder="Enter your email"><span class ="error">*<?php echo $email_err?></span><br><br>
+       
+      <label for="password">Password1</label>
+      <input type="password" name="Password"  placeholder="Create password"
+       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+       <span class ="error">*<?php echo $email_err?></span><br><br>
+      
+      <label for="password">Password2</label>
+      <input type="password" name="Password"  placeholder="confirm your password"
+      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="please enter the same password as above" required>
+      <span class ="error">*<?php echo $email_err?></span><br><br>
+      <button type="submit"> Send</button>
+     
+    </form>
+   </body>
+    
+</html>

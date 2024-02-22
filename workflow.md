@@ -159,3 +159,4 @@ date: 21/02/24
 
 date: 22/02/24
 -starting with cookies.
+-sessions
