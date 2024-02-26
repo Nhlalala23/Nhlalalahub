@@ -167,3 +167,6 @@ date:23/02/24
 
 date: 26/02/24
 -inserting form data to database.
+-inserted data from form to database
+-trying to check if the user loged in details matched with the one saved on db
+-
