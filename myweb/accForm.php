@@ -15,6 +15,7 @@ if($conn->connect_error)
 {
     die("Connection error: " .$conn->connect_error);
 }
+echo"Connected <br>";
 
 //retrieving form data
 $fname =$_POST['Name'];
@@ -23,7 +24,7 @@ $email =$_POST['Email'];
 $password =$_POST['password'];
 
 //inserting retrieved data to database
-$sql ="INSERT INTO account(Fname,Lname,email,pass) 
+$sql ="INSERT INTO accounts(Fname,Lname,email,pass) 
 VALUES ('$fname','$Lname','$email','$password')";
 
 // checking if data was addednto database
