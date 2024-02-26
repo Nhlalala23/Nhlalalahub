@@ -25,40 +25,45 @@ CREATE TABLE IF NOT EXISTS members (
 
 // Execute the members table creation query
 if ($conn->query($sql_members) === TRUE) {
-    echo "Members table created successfully";
+    echo "Members table created successfully <br>";
 } else {
-    echo "Error creating members table: " . $conn->error;
+    echo "Error creating members table: " . $conn->error ."<br>";
 }
 
-$sql_accounts = "
-CREATE TABLE IF NOT EXISTS accounts (
+$sql_accounts = "CREATE TABLE IF NOT EXISTS accounts (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     acc_number VARCHAR(30) NOT NULL,
-    balance DECIMAL(10,2) NOT NULL
+    Fname VARCHAR(30) NOT NULL,
+    Lname VARCHAR(30) NOT NULL,
+    email VARCHAR(50),
+    pass VARCHAR(230)
+
 )";
 
 // Execute the accounts table creation query
 if ($conn->query($sql_accounts) === TRUE) {
-    echo "Accounts table created successfully";
+    echo "Accounts table created successfully <br>";
 } else {
-    echo "Error creating accounts table: " . $conn->error;
+    echo "Error creating accounts table: " . $conn->error ."<br>";
 }
 
 // Add member_id column to accounts table
 $sql_add_member_id = "ALTER TABLE accounts ADD COLUMN member_id INT(6)";
 if ($conn->query($sql_add_member_id) === TRUE) {
-    echo "member_id column added to accounts table successfully";
+    echo "member_id column added to accounts table successfully <br>";
 } else {
-    echo "Error adding member_id column to accounts table: " . $conn->error;
+    echo "Error adding member_id column to accounts table: " . $conn->error ."<br>"; 
 }
 
 // Add foreign key constraint
 $sql_add_fk_constraint = "ALTER TABLE accounts ADD CONSTRAINT fk_member_id FOREIGN KEY (member_id) REFERENCES members(id)";
 if ($conn->query($sql_add_fk_constraint) === TRUE) {
-    echo "Foreign key constraint added successfully";
+    echo "Foreign key constraint added successfully <br>";
 } else {
-    echo "Error adding foreign key constraint: " . $conn->error;
+    echo "<br>Error adding foreign key constraint: " . $conn->error ."<br>";
 }
+
+
 // Close connection
 $conn->close();
 

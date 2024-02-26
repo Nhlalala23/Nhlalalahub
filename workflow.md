@@ -164,3 +164,6 @@ date: 22/02/24
 date:23/02/24
 -continuing with sessions
 -creating tables (altering tables);
+
+date: 26/02/24
+-inserting form data to database.
