@@ -37,10 +37,14 @@
             <input type="email" name ="Email" id="Email" placeholder="email@gmail.com"><br>
 
             <label for="password">Password1</label><br>
-            <input type="password" name="password" id="Paswd" placeholder="Create your password"  pattern="(?.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain 1 number and uppercase and lowercase letter, and 8 or more characters" required><br>
+            <input type="password" name="password" id="Paswd" placeholder="Create your password" 
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+       <span class ="error">*<?php echo $email_err?></span><br><br>><br>
             
             <label for="password">Password2</label><br>
-            <input type="password" name="password" id="passwd" placeholder="Confirm your password"><br>
+            <input type="password" name="password" id="passwd" placeholder="Confirm your password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+       <span class ="error">*<?php echo $email_err?></span><br><br>><br>
            <br>
             <!--Submit button-->
             <label for="button">Submit</label>
