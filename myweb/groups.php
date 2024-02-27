@@ -29,8 +29,7 @@ function group_link($group_name){
 
     //construct the group link
 
-    $link ="https://example.com/groups.php?group_name =$encode_groupname&groupId =$group_Id";
-    return $link;
+    $link = "https://example.com/groups.php?group_name=$encode_groupname&groupId=$group_id";    return $link;
 
 }
 
