@@ -170,3 +170,7 @@ date: 26/02/24
 -inserted data from form to database
 -trying to check if the user loged in details matched with the one saved on db
 -
+
+date: 27/02/24
+-created a group table
+- tryng to create links 
