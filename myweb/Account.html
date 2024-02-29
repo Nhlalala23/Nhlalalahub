@@ -19,7 +19,7 @@
 
                     <h2>Create your Account</h2>
 
-        <form action="accForm.php" method="post">
+        <form action="session_Form.php" method="post">
             <!--Creating account
            - user will create account using their info details.
            -details including:-name, surname
@@ -39,12 +39,12 @@
             <label for="password">Password1</label><br>
             <input type="password" name="password" id="Paswd" placeholder="Create your password" 
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-       <span class ="error">*<?php echo $email_err?></span><br><br>><br>
+       <span class ="error">*<?php echo $email_err?></span><br><br>
             
             <label for="password">Password2</label><br>
             <input type="password" name="password" id="passwd" placeholder="Confirm your password"
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-       <span class ="error">*<?php echo $email_err?></span><br><br>><br>
+       <span class ="error">*<?php echo $email_err?></span><br><br><br>
            <br>
             <!--Submit button-->
             <label for="button">Submit</label>

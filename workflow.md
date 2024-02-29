@@ -101,7 +101,7 @@ date 01/02/24
 -
 
 date 02/02/24
--adding infoto home page (about us,services)
+-adding info to home page (about us,services)
 -adding styles
 -ceating a page for users to create new groups
 -created a page where users will share group
@@ -174,3 +174,7 @@ date: 26/02/24
 date: 27/02/24
 -created a group table
 - tryng to create links 
+
+date:29/02/24
+- trying to use session to my website.
+-
