@@ -63,6 +63,17 @@ if ($conn->query($sql_add_fk_constraint) === TRUE) {
     echo "<br>Error adding foreign key constraint: " . $conn->error ."<br>";
 }
 
+$sql_group ="CREATE TABLE groups (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    group_name VARCHAR(50) NOT NULL,
+    link VARCHAR(50)
+)";
+
+if ($conn->query($sql_group) === TRUE) {
+    echo "Accounts table created successfully <br>";
+} else {
+    echo "Error creating accounts table: " . $conn->error ."<br>";
+}
 
 // Close connection
 $conn->close();

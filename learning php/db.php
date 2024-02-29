@@ -1,10 +1,5 @@
 <?php
 
-//collecting form data
-
-$name = $_POST['Fname'];
-$surname = $_POST['Lname'];
-$email = $_POST['email'];
 
 
 
@@ -26,19 +21,9 @@ if($conn->connect_error)
 
 }
 echo "Connected";
+echo"<br>";
 
-//sql statememnt 
-
-$sql = "INSERT INTO Account (name,Lname,email) VALUES ('$name','$surname','$email')";
-
-if($conn->query($sql)===TRUE)
-{
-  echo"Data inserted sucessfully";
-}
-else{
-  echo"ERROR: ".$sql . "<br>" . $conn->error;
-}
-/* creating a table 
+// creating a table 
  $sql = "CREATE TABLE Account(
     acc_id INT(5) AUTO_INCREMENT PRIMARY KEY,
     firstname VARCHAR(30) NOT NULL,
@@ -55,13 +40,13 @@ else{
  else {
     echo "<br> table not created";
  }
- echo"<br>";*/
+ echo"<br>";
 
 
 
  
  //inserting data 
- /*$sql ="INSERT INTO Account(firstname,lastname,email)
+ $sql ="INSERT INTO Account(firstname,lastname,email)
  VALUES ('Nhlalala','Mthombeni','lala@gmail.com')";
 
 $sql ="INSERT INTO Account(firstname,lastname,email)
@@ -77,7 +62,7 @@ VALUES ('JJ','brown','jj@gmail.com')";
  }
  else{
    echo"Error: <br>" .$conn->error;
- }*/
+ }
 
  //getting data from form
  /*if($_SERVER["REQUEST_METHOD"] =="POST")

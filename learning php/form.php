@@ -4,7 +4,9 @@
 $name = $_POST['Fname'];
 $surname = $_POST['Lname'];
 $email = $_POST['email'];
+//$password =$_POST['password'];
 
+//
 $servername ="localhost";
 $username ="root";
 $password ="";
@@ -23,9 +25,9 @@ if($conn->connect_error)
 echo "Connected";
 echo"<br>";
 
-//sql statememnt 
+//sql statememnt: for inserting data from form to table account
 
-$sql = "INSERT INTO Account (firstname,lastname,email) VALUES ('$name','$surname','$email')";
+$sql = "INSERT INTO Account (firstname,lastname,email,) VALUES ('$name','$surname','$email')";
 
 if($conn->query($sql)===TRUE)
 {
@@ -34,4 +36,6 @@ if($conn->query($sql)===TRUE)
 else{
   echo"ERROR: ".$sql . "<br>" . $conn->error;
 }
+
+$conn->close();
 ?>

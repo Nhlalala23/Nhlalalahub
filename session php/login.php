@@ -8,9 +8,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $username =$_POST['Fname'];
     $Lastname =$_POST['Lname'];
     $email =$_POST['email'];
-   //$password= $_POST['password'];
+   $password= $_POST['password'];
 
-   if( $username =$_POST['Fname'])
+   if( $username =$_POST['Fname'] && $password)
    {
     $_SESSION["logged_in"] =true;
    }

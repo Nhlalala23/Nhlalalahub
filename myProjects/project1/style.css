@@ -36,3 +36,10 @@ input{
     display: inline-block;
     border-radius: 4px;
 }
+input[text=submit]{
+    width: 30%;
+    padding: 6px 20px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(0, 102, 2550, 102, 255);
+}

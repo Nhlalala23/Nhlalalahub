@@ -34,3 +34,4 @@ echo"Connected";
     <h1>Welcome , <?php echo $_SESSION['email'];?></h1>
     <p>This is your personalised dashboard </p>
 </body>
+</html>

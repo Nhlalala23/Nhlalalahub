@@ -30,7 +30,7 @@ VALUES ('$fname','$Lname','$email','$password')";
 // checking if data was addednto database
 
 if($conn->query($sql)===TRUE){
-    echo"data added suceffully";
+    echo"data added succefully";
 
 }
 else{

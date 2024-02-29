@@ -19,21 +19,21 @@
 
         </nav>
         <!--Creating groups and sharing links to other users-->
-    <form action="actionPg">
+    <form action="groups.php" method="post">
         <div class="group">
             <h2>Create a new group</h2>
             <label for="groupName"> Group name</label><br>
-            <input type="text" id="groupName" placeholder="Enter a group name"><br><br>
+            <input type="text" name="groupName" placeholder="Enter a group name"><br><br>
 
-            <input type="text" is="decrpt" placeholder="Group description"><br><br>
+            <input type="text" name="decrpt" placeholder="Group description"><br><br>
             <button>Create a Group</button><br><br>
             
         </div>
-    </form>
+    <!--</form>
         <form action="joinGroup.html">
             <p>Share a group link to others.</p>
             <button onclick="ShareLink"> Share a link </button>
-        </form>
+        </form>-->
     
     </body>
 </html>
