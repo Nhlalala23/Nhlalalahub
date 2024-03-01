@@ -14,9 +14,9 @@
                
                 <a class="navbar-brand" href="#">M Beauty & fashion</a>
                 <ul class="navbar-nav flex-row justify-content-between " style="width:300px;">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sign-in</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Log-in</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sign-in.pho">Sign-in</a></li>
+                    <li class="nav-item"><a class="nav-link" href="log-in.php">Log-in</a></li>
                 
 <!--navbar-brand for logo-->
   
@@ -24,16 +24,26 @@
         </div>
        </nav> 
        <!--The form-->
-        <form action="form.php">
+        <form action="signDB.php" method="post" class="was-validated">
             <div class="mb-3 mt-š">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" name='Email' placeholder="Enter your email">  
+                <input type="email" class="form-control" name="Email" placeholder="Enter your email"> 
+                <div class ="valid-feedback">Valid.</div> 
+                <div class="invalid-feedback">Please use your correct email</div>
             </div>
 
             <div class="mb-3"> 
-                <label for="password">Password</label>
-                <input type="password" name="pwd" id="paswd" placeholder="Enter your password">
+                <label for="password1">Password</label>
+                <input type="password" name="pwd" id="paswd" placeholder="Create your password">
+                <div class ="valid-feedback">Valid.</div> 
+                <div class="invalid-feedback">Please use your correct email</div>
             </div>
+
+            <div class="mb-3"> 
+                <label for="password2">Password</label>
+                <input type="password" name="pwd" id="paswd" placeholder="Create your password">
+            </div>
+
 
             <div class="form-check mb-3">
                 <label for="check">
@@ -41,6 +51,8 @@
                 </label>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-        </form>   
+        </form>  
+        
+        <p>Already regestered? <a href="log-in.php">go here!</a></p>
     </body>
 </html>
