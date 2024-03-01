@@ -34,14 +34,17 @@
 
             <div class="mb-3"> 
                 <label for="password1">Password</label>
-                <input type="password" name="pwd" id="paswd" placeholder="Create your password">
+                <input type="password" name="pwd" id="paswd" placeholder="Create your password"
+                required minlength="8" pattern ="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title ="must contain at least one number,one uppercase letter,one lowercase letter,and at least 8 characters.">
                 <div class ="valid-feedback">Valid.</div> 
-                <div class="invalid-feedback">Please use your correct email</div>
+                <div class="invalid-feedback">must contain at least one number,one uppercase letter,one lowercase letter,and at least 8 characters.</div>
             </div>
 
             <div class="mb-3"> 
-                <label for="password2">Password</label>
-                <input type="password" name="pwd" id="paswd" placeholder="Create your password">
+                <label for="Pasword2" class="form-label">Confirm Pasword</label>
+                <input type="password" class="form-input" name="Confirmpwd" id="paswd" placeholder="Create your password" required>
+                <div class="invalid-feedback">Your password must be the same with the above password</div>
             </div>
 
 
