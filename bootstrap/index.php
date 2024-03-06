@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> <!--css style sheet-->
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
        <style>
             body{
                /* background-image:url("beauty.jpg");*/
@@ -25,6 +25,15 @@
                 /*margin-left: 50%;*/
                 margin-right: 50%;
                 
+            }
+            .youtube-icon{
+                color:red;
+                text-shadow: 0 0 5px white;
+            }
+            .instagram-icon{
+                color:rgb(248, 20, 134);
+                text-shadow: 0 0 5px white;
+             
             }
         </style>
     </head>
@@ -55,39 +64,66 @@
         <img src="fashion.webp" alt="fashion" width="500" height="500" >-->
        
 <h2 style="text-align: center;">get in touch with us</h2>
-<form action="">
-    <div class="container p-5 my-5 border text-body bg-light ">
-        <div class="mb-3">
+<form action="signDB.php" method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+           
+
+            <div class="container p-3 my-3 border border-secondary text-body bg-light rounded">
+            <h3>Send your request</h3>
+            <div class="mb-3">
             <label for="text" class="form-label">Name</label>
             <input type="text" class="form-control" placeholder="Enter your name">  
         </div>
-    
+
         <div class="mb-3"> 
             <label for="text">Phone</label>
-            <input type="text" name="phone" id="phone" placeholder="+27 83 4561 909">
-    
+            <input type="text" name="phone" id="phone" class="form-control" placeholder="+27 83 4561 909">
+
         </div>
-    
-        <div class="mb-3"> 
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Youremail@gmail.com">
-            
-        </div>
-        <div class="form-message">
-            <label for="message"> Text</label>
-            <textarea class="form-control " name="message" placeholder="Your Message"></textarea><br>
-            
-        </div>
-        <div >
-            <button type="submit" class="btn btn-primary"> Submit </button>
+
+    <div class="mb-3"> 
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Your email@gmail.com">
+        
+    </div>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" name="message" rows="5" placeholder="Your Message"></textarea>
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</div>
+
+            </div>
+            <div class="col">
+                <div class="border p-3">
+                    <!-- Content for the second column -->
+                    <h3>Connect with us</h3>
+                    <p>Email:</p>
+                    <p>mbeautyfashion@gmail.com</p>
+                    <p>Phone:</p>
+                   <p> +27 60 6783 0001</p>
+
+                </div>
+            </div>
         </div>
     </div>
-   
-
 </form>
 
+<!--adding social media icons-->
 
-
+        <div class="container">
+            <div class="mt-3">
+            <a href="#" class="text-decoration-none mr-3"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#" class="text-decoration-none mr-3"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#" class="text-decoration-none mr-3"><i class="fab fa-instagram fa-2x instagram-icon"></i></a>
+            <a href="#" class="text-decoration-none mr-3"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="#" class="text-decoration-none mr-3"><i class="fab fa-youtube fa-2x youtube-icon"></i></a>
+            </div>
+        </div>
     </body>
    
 </html>

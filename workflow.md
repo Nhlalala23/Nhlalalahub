@@ -186,5 +186,11 @@ date:01/03/24
 date:04/03/24
 -coding my log in page
 
-date:16/03/24
+date:05/04/2024
+-absent
+
+date:06/03/24
 -handling password encryption.
+-social media icons
+-adding 2 column borders
+-
