@@ -1,4 +1,6 @@
 <?php
+
+session_start();
 $severname ="localhost";
 $username ="root";
 $password ="";
@@ -19,7 +21,8 @@ $results = $conn->query($sql);
 
 if($results->num_rows == 1){
     $rows = $results->fetch_assoc(); //fetch_assoc function fetches a results row as an associative array (w3schools)
-    if(password_verify($paswd,$rows['pwd']))
+    
+    if(password_verify($paswd,$rows['pass']))
     {
         $_SESSION['Email'] =$email;
         echo'<div class ="container mt-5"><div class ="log log-sucess" role="log"> Login Sucessful!</div>';

@@ -185,3 +185,6 @@ date:01/03/24
 
 date:04/03/24
 -coding my log in page
+
+date:16/03/24
+-handling password encryption.
