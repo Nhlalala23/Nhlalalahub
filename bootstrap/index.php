@@ -42,19 +42,39 @@
         </style>
     </head>
     <body >
-        <nav class="navbar bg-dark navbar-dark justify-content-center"><!-- Added justify-content-center class -->
+        <!--<nav class="navbar bg-dark navbar-dark justify-content-center">< Added justify-content-center class --
             <div class="container">
                
-                <a class="navbar-brand" href="#">M Beauty & fashion</a>
+                <a class="navbar-brand" href="index.php">M Beauty & fashion</a>
                 <ul class="navbar-nav flex-row justify-content-between " style="width:300px;">
                     <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="sign-in.php">Sign-in</a></li>
                     <li class="nav-item"><a class="nav-link" href="log-in.php">Log-in</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Admin.php">Admin</a></li>
+                 </ul>-->
+                 <h1><!--<a href="index.php">-->M Beauty & Fashion</a></h1>
+                 <div class="container mt-3">
+                    <div class="dropdown dropend">
+                        <button type="button" class="btn btn-dark dropdown" data-bs-toggle ="dropdown">Menu</button>
+                        <ul class="dropdown-menu">
+                            <li><a class ="dropdown-item" href="index.php">Home</a></li>
+                            <li><a class ="dropdown-item" href="sign-up.php">Sign-in</a></li>
+                            <li><a class ="dropdown-item" href="Log-in.php">Log-in</a></li>
+                            <li><a class ="dropdown-item" href="Admin.php">Admin</a></li>
+
+
+
+                        </ul>
+          
+   
+                    </div>
+        </div>
+    
+                    
                 
 <!--navbar-brand for logo-->
   
-            </ul>
-        </div>
+         
        </nav> 
         <div class="container p-5 my-5 border bg-success ">
             <h2>Welcome to our M beauty & fashion.</h2>
@@ -136,7 +156,9 @@
 
        
 
-      
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>  
     </body>
    
 </html>
