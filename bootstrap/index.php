@@ -35,6 +35,10 @@
                 text-shadow: 0 0 5px white;
              
             }
+            .facebook{
+                color:blue;
+                text-shadow: 0 0 5px white;
+            }
         </style>
     </head>
     <body >
@@ -62,6 +66,12 @@
         </div>
        --<img class="img-fluid" src="beauty.jpg" alt="beauty" >
         <img src="fashion.webp" alt="fashion" width="500" height="500" >-->
+
+       <div class="btn-group justify-content-center" role="group" >
+        <button type="button" class ="btn btn-primary"> <a href="beauty.php"></a>  Beauty</button>
+        <button type="button" class="btn btn-primary"> <a href="fashion.php"></a>Fashion</button>
+
+       </div> 
        
 <h2 style="text-align: center;">get in touch with us</h2>
 <form action="signDB.php" method="post">
@@ -106,6 +116,15 @@
                     <p>mbeautyfashion@gmail.com</p>
                     <p>Phone:</p>
                    <p> +27 60 6783 0001</p>
+                   <div class="container">
+            <div class="mt-3">
+            <a href="#" class="text-decoration-none mr-3"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#" class="text-decoration-none mr-3"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#" class="text-decoration-none mr-3"><i class="fab fa-instagram fa-2x instagram-icon"></i></a>
+            <a href="#" class="text-decoration-none mr-3"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="#" class="text-decoration-none mr-3"><i class="fab fa-youtube fa-2x youtube-icon"></i></a>
+            </div>
+        </div>
 
                 </div>
             </div>
@@ -115,15 +134,9 @@
 
 <!--adding social media icons-->
 
-        <div class="container">
-            <div class="mt-3">
-            <a href="#" class="text-decoration-none mr-3"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="#" class="text-decoration-none mr-3"><i class="fab fa-twitter fa-2x"></i></a>
-            <a href="#" class="text-decoration-none mr-3"><i class="fab fa-instagram fa-2x instagram-icon"></i></a>
-            <a href="#" class="text-decoration-none mr-3"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="#" class="text-decoration-none mr-3"><i class="fab fa-youtube fa-2x youtube-icon"></i></a>
-            </div>
-        </div>
+       
+
+      
     </body>
    
 </html>
