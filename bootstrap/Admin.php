@@ -55,7 +55,22 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
     }
 }
 
+$status ->bind_param("i",$client_id);
 
-$mysqli->close();
+if ($status->execute()) 
+{
+    if ($status->affected_rows > 0) {
+        // Notify client about the approval/rejection
+       
+        echo "Client registration $feedback.";
+    } else {
+        echo "No client found with ID $client_id.";
+    }
+}
+else{
+    echo"Error: ".$status->error;
+}
+    
+$$status->close();
 
 ?>
