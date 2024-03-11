@@ -202,3 +202,8 @@ date:08/03/24
 -added groupbuttons
 -dropright button 
 
+date:11/03/24
+-adding navigation dropdown to other pages
+-created a client table
+- created a page for sign and login for client 
+

@@ -14,8 +14,10 @@ if($conn->connect_error){
 }
 echo"connected <br>";
 
+// TABLES
 $sql1= "CREATE TABLE account(
     id INT(5) AUTO_INCREMENT PRIMARY KEY,
+    Fname VARCHAR(35) NOT NULL,
     email VARCHAR(30) NOT NULL,
     pass VARCHAR(250) NOT NULL
 )";
@@ -28,6 +30,29 @@ else{
     echo"Error :" . $conn->error;
 }
 
-$conn->close();
 
+$sql2 = "CREATE TABLE client(
+      id INT(5) AUTO_INCREMENT PRIMARY KEY,
+      name VARCHAR(30),
+      email VARCHAR(50),
+      status ENUM('pending','approved','regected') NOT NULL DEFAULT 'pending',
+      registration_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+  
+)";
+if($conn->query($sql2)===TRUE)
+{
+    echo"<br>CLIENT was sucessfully created. ";
+}
+else{
+    echo"Error :" . $conn->error;
+}
+
+
+
+
+
+
+
+$conn->close();
 ?>
