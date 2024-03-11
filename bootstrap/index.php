@@ -53,7 +53,7 @@
                     <li class="nav-item"><a class="nav-link" href="Admin.php">Admin</a></li>
                  </ul>-->
                  <h1><!--<a href="index.php">-->M Beauty & Fashion</a></h1>
-                 <div class="container mt-3">
+                 
                     <div class="dropdown dropend">
                         <button type="button" class="btn btn-dark dropdown" data-bs-toggle ="dropdown">Menu</button>
                         <ul class="dropdown-menu">

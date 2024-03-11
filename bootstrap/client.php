@@ -27,7 +27,12 @@
                     </div> 
         </div>
 
-        <form action="client_process.php" method="post" class="was-validated">
+        <form action="Admin.php" method="post" class="was-validated">
+        <div class="mb-3 mt-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" name="Name" id="nm" placeholder="Enter your name">
+            </div>
+
             <div class="mb-3 mt-3">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" name="Email" placeholder="Enter your email"> 
@@ -35,6 +40,7 @@
                 <div class="invalid-feedback">Please use your correct email</div>
             </div>
 
+           
             <div class="mb-3"> 
                 <label for="password1">Password</label>
                 <input type="password" name="pwd" id="paswd" placeholder="Create your password"
