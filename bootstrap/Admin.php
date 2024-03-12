@@ -10,33 +10,30 @@ $database = "M_Beauty";
 $conn = new mysqli($servername, $username, $password, $database);
 
 // check if connected
-
-if($conn->connect_error){
-    die("not connected" .$conn->connect_error);
+if ($conn->connect_error) {
+    die("not connected" . $conn->connect_error);
 }
-//echo"connected <br>";
 
-if( $_SERVER['REQUEST_METHOD'] === 'POST') // checking if the form is submitted
+if ($_SERVER['REQUEST_METHOD'] === 'POST') // checking if the form is submitted
 {
     $name = $_POST['Name'];
     $email = $_POST['Email'];
 
     //inserting form registration to database with pending status
-   $status =$conn->prepare("INSERT INTO clients(name,email,status) VALUES(?,?,'pending')");
-    $status->bind_param("ss",$name,$email);
+    $status = $conn->prepare("INSERT INTO clients (name, email, status) VALUES (?, ?, 'pending')");
+    if (!$status) {
+        die("Error preparing statement: " . $conn->error);
+    }
 
-if($status->execute())
-{
-    //notifying admin 
+    $status->bind_param("ss", $name, $email);
 
-    echo"Client regestration submitted";
-}
-else{
-    echo"Error: " .$status->error;
-}
-$status->close();
-   
-   
+    if ($status->execute()) {
+        //notifying admin 
+        echo "Client registration submitted";
+    } else {
+        echo "Error: " . $status->error;
+    }
+    $status->close();
 }
 
 
@@ -46,30 +43,26 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
     $clientId = $_GET['id'];
 
     //updating status based on admin action
-    if($action === 'approved'){
+    if ($action === 'approved') {
         $update = $conn->prepare("UPDATE clients SET status ='approved' WHERE id= ?");
-
-    }
-    elseif($action ==='reject'){
+    } elseif ($action === 'reject') {
         $update = $conn->prepare("UPDATE clients SET status ='rejected' WHERE id =?");
     }
 
+    $update->bind_param("i", $clientId);
 
-$update->bind_param("i", $clientId);
-
-if ($update->execute()) {
-    if ($update->affected_rows > 0) {
-        // Notify client about the approval/rejection
-        echo "Client registration $action.";
+    if ($update->execute()) {
+        if ($update->affected_rows > 0) {
+            // Notify client about the approval/rejection
+            echo "Client registration $action.";
+        } else {
+            echo "No client found with ID $clientId.";
+        }
     } else {
-        echo "No client found with ID $clientId.";
+        echo "Error: " . $update->error;
     }
-}
- else {
-    echo "Error: " . $update->error;
-}
 
-$update->close();
+    $update->close();
 }
 
 // Close connection
