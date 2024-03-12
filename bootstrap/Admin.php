@@ -16,20 +16,20 @@ if($conn->connect_error){
 }
 //echo"connected <br>";
 
-if( $_SERVER['REQUEST_METHOD']==='POST') // checking if the form is submitted
+if( $_SERVER['REQUEST_METHOD'] === 'POST') // checking if the form is submitted
 {
     $name = $_POST['Name'];
     $email = $_POST['Email'];
 
     //inserting form registration to database with pending status
-   $status =$mysqli->prepare("INSERT INTO clients(name,email,status) VALUES('$name','$email','pending')");
-$status->bind_param("ss",$name,$email);
+   $status =$conn->prepare("INSERT INTO clients(name,email,status) VALUES(?,?,'pending')");
+    $status->bind_param("ss",$name,$email);
 
 if($status->execute())
 {
     //notifying admin 
 
-    echo"Client regestration sumitted";
+    echo"Client regestration submitted";
 }
 else{
     echo"Error: " .$status->error;
@@ -46,31 +46,32 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
     $clientId = $_GET['id'];
 
     //updating status based on admin action
-    if($feedback === 'approved'){
-        $status = $mysqli->prepare("UPDATE clients SET status ='approved' WHERE id= 1");
+    if($action === 'approved'){
+        $update = $conn->prepare("UPDATE clients SET status ='approved' WHERE id= ?");
 
     }
-    elseif($feedback ==='reject'){
-        $status = $mysqli->prepare("UPDATE clients SET status ='rejected' WHERE id =1");
+    elseif($action ==='reject'){
+        $update = $conn->prepare("UPDATE clients SET status ='rejected' WHERE id =?");
     }
-}
 
-$status ->bind_param("i",$client_id);
 
-if ($status->execute()) 
-{
-    if ($status->affected_rows > 0) {
+$update->bind_param("i", $clientId);
+
+if ($update->execute()) {
+    if ($update->affected_rows > 0) {
         // Notify client about the approval/rejection
-       
-        echo "Client registration $feedback.";
+        echo "Client registration $action.";
     } else {
-        echo "No client found with ID $client_id.";
+        echo "No client found with ID $clientId.";
     }
 }
-else{
-    echo"Error: ".$status->error;
+ else {
+    echo "Error: " . $update->error;
 }
-    
-$$status->close();
 
+$update->close();
+}
+
+// Close connection
+$conn->close();
 ?>
