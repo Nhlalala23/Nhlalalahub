@@ -15,7 +15,7 @@ if($conn->connect_error){
 echo"connected <br>";
 
 // TABLES
-$sql1= "CREATE TABLE account(
+$sql1= "CREATE TABLE CUSTOMER(
     id INT(5) AUTO_INCREMENT PRIMARY KEY,
     Fname VARCHAR(35) NOT NULL,
     email VARCHAR(30) NOT NULL,
@@ -31,7 +31,7 @@ else{
 }
 
 
-$sql2 = "CREATE TABLE client(
+$sql2 = "CREATE TABLE clients(
       id INT(5) AUTO_INCREMENT PRIMARY KEY,
       name VARCHAR(30),
       email VARCHAR(50),

@@ -212,4 +212,5 @@ date: 12/03/24
 -fixing my code
 -
 date: 13/03/24
--adding function for email
+-adding function for email on admin and index page(for contacts)
+-

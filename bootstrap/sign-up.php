@@ -6,26 +6,29 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> <!--css style sheet-->
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     </head>
     <body>
-        <nav class="navbar bg-dark navbar-dark justify-content-center"><!-- Added justify-content-center class -->
-            <div class="container">
-               
-                <a class="navbar-brand" href="#">M Beauty & fashion</a>
-                <ul class="navbar-nav flex-row justify-content-between " style="width:300px;">
-                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sign-in.pho">Sign-in</a></li>
-                    <li class="nav-item"><a class="nav-link" href="log-in.php">Log-in</a></li>
-                
-<!--navbar-brand for logo-->
-  
-            </ul>
-        </div>
-       </nav> 
+    <h1><!--<a href="index.php">-->M Beauty & Fashion</a></h1>
+    <div class="container mt-3">
+                    <div class="dropdown dropend">
+                        <button type="button" class="btn btn-dark dropdown" data-bs-toggle ="dropdown">Menu</button>
+                        <ul class="dropdown-menu">
+                            <li><a class ="dropdown-item" href="index.php">Home</a></li>
+                            <li><a class ="dropdown-item" href="sign-up.php">Sign-in</a></li>
+                            <li><a class ="dropdown-item" href="Log-in.php">Log-in</a></li>
+                            <li><a class ="dropdown-item" href="Admin.php">Admin</a></li>
+
+
+
+                        </ul>
+          
+   
+                    </div> 
+</div>
        <!--The form-->
         <form action="signDB.php" method="post" class="was-validated">
-            <div class="mb-3 mt-š">
+            <div class="mb-3 mt-3">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" name="Email" placeholder="Enter your email"> 
                 <div class ="valid-feedback">Valid.</div> 
@@ -55,7 +58,10 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>  
-        
+        <p>Sign up as a client <a href="client.php">Click here!</a></p>
         <p>Already regestered? <a href="log-in.php">go here!</a></p>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
     </body>
 </html>

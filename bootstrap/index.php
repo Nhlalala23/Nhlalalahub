@@ -94,7 +94,7 @@
        </div> 
        
 <h2 style="text-align: center;">get in touch with us</h2>
-<form action="signDB.php" method="post">
+<form action="contact_process.php" method="post">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -104,7 +104,7 @@
             <h3>Send your request</h3>
             <div class="mb-3">
             <label for="text" class="form-label">Name</label>
-            <input type="text" class="form-control" placeholder="Enter your name">  
+            <input type="text" class="form-control" name="Name" placeholder="Enter your name">  
         </div>
 
         <div class="mb-3"> 
