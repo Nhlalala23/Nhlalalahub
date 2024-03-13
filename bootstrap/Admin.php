@@ -1,4 +1,28 @@
 <?php
+
+//function to send email to admin
+
+function sendEmail($admin_email ,$client_name){
+   // $send = $admin_email;
+    $subject ='New client regestration ';
+    $message ="Hello admin,\n\nA new client regestration requires your approval.
+    \nClient Name: $client_name\n\nThank you.";
+    $headers ='From: mthombeninhlalala41@gmail.com' . "\r\n". 
+    'Reply-To: prettyMasango@gmail.com' . "\r\n" . 
+    'X-Mailer: PHP/' . phpversion();
+
+        //send email
+
+    if(mail($send,$subject,$message,$headers)){
+            return $headers;
+        }
+    else{
+            echo"Failed to send email";
+        }
+}
+
+
+
 //approves clients
 
 $servername = "localhost";
@@ -64,6 +88,8 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
 
     $update->close();
 }
+
+
 
 // Close connection
 $conn->close();

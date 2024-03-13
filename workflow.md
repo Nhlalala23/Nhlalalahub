@@ -211,3 +211,5 @@ date:11/03/24
 date: 12/03/24
 -fixing my code
 -
+date: 13/03/24
+-adding function for email
