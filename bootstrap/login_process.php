@@ -19,7 +19,7 @@ $paswd =$_POST['pwd'];
 $sql ="SELECT * FROM account WHERE Email ='$email'";
 $results = $conn->query($sql);
 
-if($results->num_rows == 1){
+if($results && $results->num_rows == 1){
     $rows = $results->fetch_assoc(); //fetch_assoc function fetches a results row as an associative array (w3schools)
     
     if(password_verify($paswd,$rows['pass']))

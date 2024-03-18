@@ -214,3 +214,13 @@ date: 12/03/24
 date: 13/03/24
 -adding function for email on admin and index page(for contacts)
 -
+
+date:14/03/24
+-absent
+
+date:15/03/24
+-absent
+
+date:18/03/24
+-fixing erros
+-

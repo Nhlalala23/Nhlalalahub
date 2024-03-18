@@ -39,6 +39,7 @@
                 color:blue;
                 text-shadow: 0 0 5px white;
             }
+            
         </style>
     </head>
     <body >
@@ -68,7 +69,7 @@
           
    
                     </div>
-        </div>
+        
     
                     
                 
@@ -88,8 +89,8 @@
         <img src="fashion.webp" alt="fashion" width="500" height="500" >-->
 
        <div class="btn-group justify-content-center" role="group" >
-        <button type="button" class ="btn btn-primary"> <a href="beauty.php"></a>  Beauty</button>
-        <button type="button" class="btn btn-primary"> <a href="fashion.php"></a>Fashion</button>
+        <button type="button" class ="btn btn-primary"> <a class=" btn beautylink" href=" beauty.php">Beauty</a></button>
+        <button type="button" class="btn btn-primary"> <a class=" btn fashionlink" href="fashion.php">Fashion</a></button>
 
        </div> 
        
