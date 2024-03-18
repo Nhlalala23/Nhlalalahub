@@ -35,8 +35,12 @@
                 text-shadow: 0 0 5px white;
              
             }
-            .facebook{
+            .facebook-icon{
                 color:blue;
+                text-shadow: 0 0 5px white;
+            }
+            .whatsapp-icon{
+                color:lime;
                 text-shadow: 0 0 5px white;
             }
             
@@ -142,8 +146,9 @@
             <a href="#" class="text-decoration-none mr-3"><i class="fab fa-facebook fa-2x"></i></a>
             <a href="#" class="text-decoration-none mr-3"><i class="fab fa-twitter fa-2x"></i></a>
             <a href="#" class="text-decoration-none mr-3"><i class="fab fa-instagram fa-2x instagram-icon"></i></a>
-            <a href="#" class="text-decoration-none mr-3"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="#" class="text-decoration-none mr-3"><i class="fab fa-linkedin fa-2x linkedin"></i></a>
             <a href="#" class="text-decoration-none mr-3"><i class="fab fa-youtube fa-2x youtube-icon"></i></a>
+            <a href="#" class="text-decoration-none mr-3"><i class="fab fa-whatsapp fa-2x whatsapp-icon"></i></a>
             </div>
         </div>
 
