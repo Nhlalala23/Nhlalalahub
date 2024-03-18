@@ -1,31 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vertical Navigation Menu</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    /* Optional: Custom styles for the vertical navigation */
-    .vertical-menu {
-      width: 200px; /* Set a width for the vertical menu */
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="vertical-menu">
-      <a href="#" class="list-group-item list-group-item-action active">Home</a>
-      <a href="#" class="list-group-item list-group-item-action">About</a>
-      <a href="#" class="list-group-item list-group-item-action">Services</a>
-      <a href="#" class="list-group-item list-group-item-action">Contact</a>
-    </div>
-  </div>
-
-  <!-- Bootstrap JS and dependencies (if needed) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+<html>
+    <head>
+        <title>my web</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> <!--css style sheet-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body>
+                    <div class="dropdown dropend">
+                        <button type="button" class="btn btn-dark dropdown" data-bs-toggle ="dropdown">Menu</button>
+                        <ul class="dropdown-menu">
+                            <li><a class ="dropdown-item" href="index.php">Home</a></li>
+                            <li><a class ="dropdown-item" href="sign-up.php">Sign-in</a></li>
+                            <li><a class ="dropdown-item" href="Log-in.php">Log-in</a></li>
+                            <li><a class ="dropdown-item" href="Admin.php">Admin</a></li>
+                        </ul>
+          
+   
+                    </div>
+                    
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>  
+    </body>
 </html>
