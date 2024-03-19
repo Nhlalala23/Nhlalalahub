@@ -224,3 +224,6 @@ date:15/03/24
 date:18/03/24
 -fixing erros
 -trying to code beauty & fashion pages
+
+date:19/03/24
+- created table for admin and notifications.

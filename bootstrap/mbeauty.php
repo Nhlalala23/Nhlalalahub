@@ -48,8 +48,44 @@ else{
     echo"Error :" . $conn->error;
 }
 
+$sql3 ="CREATE TABLE admin(
+    id INT(5) AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)";
 
 
+if($conn->query($sql3)===TRUE)
+{
+    echo"ADMIN was sucessfully created. ";
+}
+else{
+    echo"Error :" . $conn->error;
+}
+
+
+//notification table
+
+$sql4 ="CREATE TABLE notifications(
+    id INT(5) AUTO_INCREMENT PRIMARY KEY,
+    admin_id int NOT NULL,
+    message TEXT NOT NULL,
+    time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    is_read TINYINT(1) NOT NULL DEFAULT 0,
+    FOREIGN KEY (admin_id) REFERENCES admin(id)
+)";
+
+
+
+if($conn->query($sql4)===TRUE)
+{
+    echo"NOTIFICATIONS was sucessfully created. ";
+}
+else{
+    echo"Error :" . $conn->error;
+}
 
 
 
