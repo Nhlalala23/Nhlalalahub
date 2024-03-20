@@ -65,30 +65,45 @@
                     <li class="nav-item"><a class="nav-link" href="log-in.php">Log-in</a></li>
                     <li class="nav-item"><a class="nav-link" href="Admin.php">Admin</a></li>
                 </ul>-->
-                 <h1><!--<a href="index.php">-->M Beauty & Fashion</a></h1>
-                 
-                    <div class="dropdown dropend">
-                        <button type="button" class="btn btn-dark dropdown" data-bs-toggle ="dropdown">Menu</button>
-                        <ul class="dropdown-menu">
-                            <li><a class ="dropdown-item" href="index.php">Home</a></li>
-                            <li><a class ="dropdown-item" href="sign-up.php">Sign-in</a></li>
-                            <li><a class ="dropdown-item" href="Log-in.php">Log-in</a></li>
-                            <li><a class ="dropdown-item" href="Admin_sign.php">Admin</a></li>
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M Beauty & Fashion</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <h1 class="navbar-brand"><!--<a href="index.php">-->M Beauty & Fashion</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sign-up.php">Sign-in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Log-in.php">Log-in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Admin_sign.php">Admin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-
-
-                        </ul>
-          
-   
-                    </div>
-        
-    
-                    
-                
-<!--navbar-brand for logo-->
-  
-         
-       </nav> 
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
         <div class="container p-5 my-5 border bg-success ">
             <h2>Welcome to our M beauty & fashion.</h2>
             <p>We are all about beauty and fashion. Were all the beauty gurus and fashion designers and show off their work and market themselves through our platform.</p>

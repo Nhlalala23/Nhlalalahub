@@ -233,3 +233,4 @@ date:20/03/24
 -trying to style dropdown navigation
 -styling my admin form
 -putting forms inside borders and styling pages.
+-fixing my nav bar with logo
