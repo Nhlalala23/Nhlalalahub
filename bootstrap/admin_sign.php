@@ -8,6 +8,15 @@
    
 
 </head>
+<style>
+    body{
+       /* background-color:teal;*/
+    }
+    .border{
+        width:500px;
+        height:400px;
+    }
+</style>
 <body>
     <h1>M Beauty & Fashion</h1>
 
@@ -25,37 +34,42 @@
     <p>Please create your admin account.</p>
     <p>If you are not admin please leave this page <a href="index.php"> click here</a></p>
 
-    <form action="adm_process.php" method="post">
-        <div class="mb-3 mt-3">
-            <label for="Username" class="form-label">Username</label> <!--can be work Id -->
-            <input type="text" class="form-control" name="username" placeholder="Enter your Username"> 
-            <div class ="valid-feedback">Valid.</div> 
-            <div class="invalid-feedback">This field is required</div>
-        </div>
+   <form action="adm_process.php" method="post">
+    <div class="container border">
+       <div class="container mb-3 mt-3">
+           <label for="Username" class="form-label">Username</label> <!--can be work Id -->
+           <input type="text" class="form-control" name="username" placeholder="Enter your Username"> 
+           <div class ="valid-feedback">Valid.</div> 
+           <div class="invalid-feedback">This field is required</div>
+       </div>
 
-        <div class="mb-3 mt-3">
-            <label for="email" class="form-label">Email</label> <!--can be work Id -->
-            <input type="text" class="form-control" name="Email" placeholder="Enter your email"> 
-            <div class ="valid-feedback">Valid.</div> 
-            <div class="invalid-feedback">This field is required</div>
-        </div>
+   <div class=" container  mb-3 mt-3">
+       <label for="email" class="form-label">Email</label> <!--can be work Id -->
+       <input type="text" class="form-control" name="Email" placeholder="Enter your email"> 
+       <div class ="valid-feedback">Valid.</div> 
+       <div class="invalid-feedback">This field is required</div>
+   </div>
 
-        <div class="mb-3"> 
-                <label for="password1">Password</label>
-                <input type="password" name="pwd" id="paswd" placeholder="Create your password"
-                required minlength="8" pattern ="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                title ="must contain at least one number,one uppercase letter,one lowercase letter,and at least 8 characters.">
-                <div class ="valid-feedback">Valid.</div> 
-                <div class="invalid-feedback">must contain at least one number,one uppercase letter,one lowercase letter,and at least 8 characters.</div>
-            </div>
+   <div class= " container mb-3"> 
+           <label for="password1">Password</label>
+           <input type="password" name="password" id="paswd" placeholder="Create your password"
+           required minlength="8" pattern ="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+           title ="must contain at least one number,one uppercase letter,one lowercase letter,and at least 8 characters.">
+           <div class ="valid-feedback">Valid.</div> 
+           <div class="invalid-feedback">must contain at least one number,one uppercase letter,one lowercase letter,and at least 8 characters.</div>
+       </div>
 
-            <div class="mb-3"> 
-                <label for="Pasword2" class="form-label">Confirm Pasword</label>
-                <input type="password" class="form-input" name="Confirmpwd" id="paswd" placeholder="Create your password" required>
-                <div class="invalid-feedback">Your password must be the same with the above password</div>
-            </div>
+       <div class="container mb-3"> 
+           <label for="Pasword2" class="form-label">Confirm Pasword</label>
+           <input type="password" class="form-input" name="Confirmpwd" id="paswd" placeholder="Create your password" required>
+           <div class="invalid-feedback">Your password must be the same with the above password</div>
+       </div>
 
+   <button type="submit" class="btn btn-primary">Submit</button>
+   </div>
     </form>
+
+    
 
 
 

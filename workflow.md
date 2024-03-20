@@ -231,3 +231,5 @@ date:19/03/24
 
 date:20/03/24
 -trying to style dropdown navigation
+-styling my admin form
+-putting forms inside borders and styling pages.

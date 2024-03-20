@@ -17,7 +17,7 @@
                             <li><a class ="dropdown-item" href="index.php">Home</a></li>
                             <li><a class ="dropdown-item" href="sign-up.php">Sign-in</a></li>
                             <li><a class ="dropdown-item" href="Log-in.php">Log-in</a></li>
-                            <li><a class ="dropdown-item" href="Admin.php">Admin</a></li>
+                            <li><a class ="dropdown-item" href="Admin_sign.php">Admin</a></li>
 
 
 

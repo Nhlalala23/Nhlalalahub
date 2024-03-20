@@ -45,7 +45,7 @@
             }
             .dropdown-menu{
                 min-width: 200px;
-                height: 2000px;
+                height: 200px;
             }
             .dropdown-item{
                 font-size:18px;
