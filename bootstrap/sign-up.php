@@ -14,7 +14,7 @@
         height:400px;
     }
     body{
-        background-color:green;
+        /*background-color:green;*/
     }
     </style>
     <body>

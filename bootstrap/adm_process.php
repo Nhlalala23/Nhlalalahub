@@ -26,6 +26,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
     //hash the password -->security
     $hashpaswd = password_hash($pass,PASSWORD_DEFAULT);
+    
 
 
 }

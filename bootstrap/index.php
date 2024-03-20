@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> <!--css style sheet-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
        <style>
             body{
                /* background-image:url("beauty.jpg");*/
@@ -65,16 +67,8 @@
                     <li class="nav-item"><a class="nav-link" href="log-in.php">Log-in</a></li>
                     <li class="nav-item"><a class="nav-link" href="Admin.php">Admin</a></li>
                 </ul>-->
-                <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M Beauty & Fashion</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <h1 class="navbar-brand"><!--<a href="index.php">-->M Beauty & Fashion</h1>
