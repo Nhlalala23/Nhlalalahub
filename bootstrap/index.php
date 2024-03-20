@@ -43,6 +43,14 @@
                 color:lime;
                 text-shadow: 0 0 5px white;
             }
+            .dropdown-menu{
+                min-width: 200px;
+                height: 2000px;
+            }
+            .dropdown-item{
+                font-size:18px;
+                padding:10px 20px;
+            }
             
         </style>
     </head>
@@ -56,7 +64,7 @@
                     <li class="nav-item"><a class="nav-link" href="sign-in.php">Sign-in</a></li>
                     <li class="nav-item"><a class="nav-link" href="log-in.php">Log-in</a></li>
                     <li class="nav-item"><a class="nav-link" href="Admin.php">Admin</a></li>
-                 </ul>-->
+                </ul>-->
                  <h1><!--<a href="index.php">-->M Beauty & Fashion</a></h1>
                  
                     <div class="dropdown dropend">
@@ -65,7 +73,7 @@
                             <li><a class ="dropdown-item" href="index.php">Home</a></li>
                             <li><a class ="dropdown-item" href="sign-up.php">Sign-in</a></li>
                             <li><a class ="dropdown-item" href="Log-in.php">Log-in</a></li>
-                            <li><a class ="dropdown-item" href="Admin.php">Admin</a></li>
+                            <li><a class ="dropdown-item" href="Admin_sign.php">Admin</a></li>
 
 
 
@@ -105,11 +113,12 @@
             <div class="col">
            
 
-            <div class="container p-3 my-3 border border-secondary text-body bg-light rounded">
-            <h3>Send your request</h3>
-            <div class="mb-3">
-            <label for="text" class="form-label">Name</label>
-            <input type="text" class="form-control" name="Name" placeholder="Enter your name">  
+             <div class="container p-3 my-3 border border-secondary text-body bg-light rounded">
+             <h3>Send your request</h3>
+                <div class="mb-3">
+                <label for="text" class="form-label">Name</label>
+                <input type="text" class="form-control" name="Name" placeholder="Enter your name">  
+            </div>
         </div>
 
         <div class="mb-3"> 
@@ -118,23 +127,23 @@
 
         </div>
 
-    <div class="mb-3"> 
+        <div class="mb-3"> 
         <label for="email">Email</label>
         <input type="email" name="email" id="email" class="form-control" placeholder="Your email@gmail.com">
         
-    </div>
-    <div class="form-group">
+     </div>
+     <div class="form-group">
         <label for="message">Message</label>
         <textarea class="form-control" name="message" rows="5" placeholder="Your Message"></textarea>
-    </div>
-    <div class="mb-3">
+        </div>
+        <div class="mb-3">
         <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-</div>
+     </div>
+        </div>
 
-            </div>
-            <div class="col">
-                <div class="border p-3">
+    </div>
+        <div class="col">
+            <div class="border p-3">
                     <!-- Content for the second column -->
                     <h3>Connect with us</h3>
                     <p>Email:</p>
