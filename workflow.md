@@ -234,3 +234,6 @@ date:20/03/24
 -styling my admin form
 -putting forms inside borders and styling pages.
 -fixing my nav bar with logo
+
+date:22/03/24
+-adding footer to home page

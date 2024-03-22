@@ -23,6 +23,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         echo"Please fill in the empty fields";
 
     }
+    else{
+        echo"You are regestered" .$user_rname;
+    }
 
     //hash the password -->security
     $hashpaswd = password_hash($pass,PASSWORD_DEFAULT);
