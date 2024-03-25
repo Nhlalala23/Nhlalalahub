@@ -84,7 +84,7 @@
             <a class="nav-link" href="sign-up.php">Sign-in</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Log-in.php">Log-in</a>
+            <a class="nav-link" href="log-in.php">Log-in</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Admin_sign.php">Admin</a>
