@@ -22,6 +22,21 @@ public class test{
 
        //string length
        System.out.println("length = " + greeting.length());
+
+       // if else
+    int finalmark =55;
+    int total =0;
+
+    if(finalmark >50){
+        System.out.println("pass");
+    }
+    else{
+        System.out.println("fail");
+ 
+    }
+
+    
+
     }
 }
 
