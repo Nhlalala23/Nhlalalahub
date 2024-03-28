@@ -3,6 +3,7 @@ package Java.classes;
 //fields
 public class Student {
     String name;
+    int age;
     String student_id;
     String course;
 
@@ -15,10 +16,23 @@ public class Student {
 
     }
 
-    //Method
-
-    public void drive(){
-        System.out.println("for 4 years");
+    //Getter Method
+    public String getName(){
+        return name;
     }
-    
+
+    public int getAge()
+    {
+        return age;
+    }
+
+    public String courseName(){
+        return course;
+    }
+    //Method o display student information
+
+    public void information(){
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
 }
