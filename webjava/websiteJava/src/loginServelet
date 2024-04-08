@@ -8,7 +8,7 @@ import javax.servlet.http.HttpSession;
 public class LoginServlet extends J==HttpServlet{
     protected void doPost(HttpServletRequest request ,HttpServletResponse)throws ServletException,IOException{
         String username = request.getParameter("username");
-        String password = request.getParameter("password");
+        String password = request.getParameter("password ");
 
         
     }
