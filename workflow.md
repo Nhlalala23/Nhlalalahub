@@ -268,3 +268,8 @@ date:05/04/24
 
 date: 09/04/24
 -doing abstract 
+- doing java interface
+
+date: 11/04/24
+-interface
+-Enums
