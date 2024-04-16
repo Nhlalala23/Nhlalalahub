@@ -278,3 +278,6 @@ date: 11/04/24
 date 15/04/24
 - java date and time
 -
+
+date: 16/04/24
+-ArrayLists
