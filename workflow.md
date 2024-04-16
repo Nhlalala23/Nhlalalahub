@@ -281,3 +281,4 @@ date 15/04/24
 
 date: 16/04/24
 -ArrayLists
+-linkedlist
