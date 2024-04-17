@@ -5,17 +5,8 @@
  */
 
  import java.util.ArrayList;
-import java.util.Iterator;
 
- public class iterator{
-    public static void main(String[] args) {
-        ArrayList<String>list = new ArrayList<>();
-
-        list.add("Nhlalala");
-        list.add("lala");
-        list.add("Charlie");
-
-        //get the iterator
+//get the iterator
         Iterator<String> iterator = list.iterator();
 
         //Traverse and print elements using iterator
@@ -28,6 +19,28 @@ import java.util.Iterator;
         
     }
  }
+
+ import java.util.HashSet;
+import java.util.Iterator;
+ //iterator with hashSet
+ public class iterator{
+    public static void main(String[] args) {
+        HashSet<String> set = new HashSet<>();
+
+        set.add("Apple");
+        set.add("Peach");
+        set.add("Grape");
+
+        //get the itarator
+        Iterator<String> iterator = set.itarator();
+        //this.name = name example******
+
+        while(itarator.hasNext()){
+            String fruit = itarator.next();
+            System.out.println(fruit);
+        }
+    }
+}
 
 
 
