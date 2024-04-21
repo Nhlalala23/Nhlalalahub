@@ -295,3 +295,4 @@ date:18/04/24
 
 date: 21/04/24
 -matching patterns
+-writing and reading to a file
