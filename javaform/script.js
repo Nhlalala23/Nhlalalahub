@@ -10,5 +10,5 @@ document.addEventListener('DOMContentLoaded',function(){
         console.log('Name:${name},Emal:${email}Message: ${message}');
 
         alert('Form submitted successfully');
-    });
+    }) ;
 });
