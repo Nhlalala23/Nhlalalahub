@@ -301,3 +301,9 @@ date:23/04/24
 -creating html form
 -including js script
 - and java for backend
+
+date: 24/04/24
+-Absent
+
+date:25/04/24
+-form using java pages including bootstrap
