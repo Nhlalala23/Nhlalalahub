@@ -314,3 +314,8 @@ date:29/04/24
 
 date:08/05/24
 -Portfolio
+
+date:10/05/24
+-constructors
+-getters and setters
+
