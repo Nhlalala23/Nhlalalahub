@@ -1,10 +1,7 @@
 
 package portfolio;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-//handling contacts mmessages
+//handling contacts messages
 @Service
 public class ContactMessService {
     private final ContactMessRepository contactMessRepository;

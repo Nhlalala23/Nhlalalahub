@@ -319,3 +319,6 @@ date:10/05/24
 -constructors
 -getters and setters
 
+date:13/05/24
+- backend for contacts
+
