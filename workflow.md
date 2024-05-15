@@ -322,3 +322,6 @@ date:10/05/24
 date:13/05/24
 - backend for contacts
 
+date:15/05/24
+-doing research about System development
+
