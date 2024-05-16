@@ -325,3 +325,6 @@ date:13/05/24
 date:15/05/24
 -doing research about System development
 
+date:16/05/24
+-submitted a document based on architecture of a system.
+
