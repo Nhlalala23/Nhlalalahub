@@ -5,70 +5,96 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <title>my portfolio</title>
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+         <link rel="stylesheet" href="style.css">
+        <style>
+            /*adding space between navbar and header*/
+            header{
+                margin-top: 30px;
+            }
+        </style>
     </head>
     <body>
-        <!--Nav-bar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">my portfolio</a>
-                <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class ="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id ="navbarNav">
-                    <ul lass="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"> <a class ="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item" > <a class="nav-link" href="#Contact">Contact</a></li>
-                    </ul>
-
-                </div>
-            </div>
-        </nav>
+      <!-- Nav-bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">My Site</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!--<li class="nav-item"><a class="nav-link" href="#about">About</a></li>-->
+                <li class="nav-item"><a class="nav-link" href="#About">About-Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
         <!--Header-->
         <header class="jumbotron jumbotron-fluid text-center">
             <div class="container">
-                <h1 class="display-4">Welcome to My Portfolio</h1>
+                <h1 class="display-4">Welcome to My Site</h1>
                 <p class="lead">Showcasing my work and skills</p>
 
             </div>
         </header>
         <!--About -->
-        <section id="about" class="py-5">
+        <section id="About" class="py-5">
             <div class="container">
                 <h2 class="text-center mb-4">About Me</h2>
                 <div class="row">
                     <div class="col-md-6">
                         <h3>Who Am I?</h3>
-                        <p>Nhlalala Mthombeni, Currently Completing WIL(Work Integrated Learning) in order to graduate in October 2024. 
-                            am a highly driven software development seeking for an internship position to apply and expand my skills. I am a
-                            good communicator, a team player, self driven , honest, good in observation and a fast learner. I have knowledge
-                            and understanding in SDLC,UML Agile development process, system architecture, system analysis and design.
+                        <p>Nhlalala Mthombeni, Currently Completing WIL(Work Integrated Learning), expected to graduate in October 2024.I am a highly motivated software developer seeking internship opportunities to apply and further expand my skills. My journey through school and various job experiences has equipped me with a robust understanding of software development and technology.
+
                         </p>
+                        I have experience in front-end and back-end development, gained through hands-on projects, internships, and my current role at TechCode Hive. I am proficient in various programming languages and tools, and I am always eager to learn new technologies and methodologies.
+                    </p>
 
                     </div>
                     <div class="col-md-6">
                         <h3>My Skills</h3>
                         <ul>
-                            <li>HTML/CSS</li>
-                            <li>Bootstrap</li>
-                            <li>PHP</li>
-                            <li>JAVA</li>
-                            <li>C++</li>
-                            <li>MYSQL</li>
-                            <li>PL/SQL</li>
-                            <li>Oracle</li>
+                            <li>HTML/CSS <span class="badge badge-success">Advanced</span></li>
+                            <li>Bootstrap<span class="badge badge-primary">Intermediate</span></li>
+                            <li>PHP<span class="badge badge-primary">Intermediate</span></li>
+                            <li>C++<span class="badge badge-success">Advanced</span></li>
+                            <li>MYSQL<span class="badge badge-primary">Intermediate</span></li>
+                            <li>PL/SQL<span class="badge badge-primary">Intermediate</span></li>
+                            <li>Oracle<span class="badge badge-primary">Intermediate</span></li>
 
 
                         </ul>
+                    </div>
+                    <div class="col-md-6"> 
+                        <h3>Tools & Technologies</h3>
+                        <ul>
+                            <li>Git & GitHub</li>
+                            <li>Visual Studio Code </li>
+                            <li>XAMPP</li>
+                            <li>phpMyAdmin</li>
+                            <li>Power BI (for data analytics)</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>My Education</h3>
+                        <ul>
+                            <li><strong>National Diploma in Software Development</strong> (Exepected October 2024)</li>
+                            <li><strong>Az-900: Microsoft Azure Fundamentals certification</strong><br>
+                            Dynamic DNA (Completed)
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
          </section>
 
-         <!--Portfolio Section-->
-         <section id="portfolio" class="bg-light py-5">
+         <!--Portfolio Section
+       <section id="portfolio" class="bg-light py-5">
             <div class="container">
                 <h2 class="text-center mb-4">Portfolio</h2>
                 <div class="row">
@@ -79,7 +105,7 @@
                 </div>
 
             </div>
-         </section>
+         </section>-->
 
          <!--contacts sec -->
          <section id="Contact" class="py-5">
@@ -110,6 +136,15 @@
             </div>
 
          </section>
-         
+         <!--footer(Social media icons)-->
+         <footer class="bg-light py-3">
+            <p>&copy; 2024 Nhlalala Mthombeni.All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/nhlalala-mthombeni-89b495236/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Nhlalala23/Nhlalalahub" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/lalamthombeni/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://web.facebook.com/lala.mthombeni.9/"  target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+         </footer>
     </body>
 </html>
