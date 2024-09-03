@@ -2,7 +2,7 @@
 $servername ="localhost";
 $username="root";
 $password ="";
-$dbname ="myContacts_db";
+$dbname ="mycontacts_db";
 
 //connecting to mysql
 $conn =new mysqli($servername,$username,$password,$dbname);
@@ -28,12 +28,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if($stmt->execute()){
         echo "New record created suceffully";
     }
+    
     else{
         echo"Error: ".$stmt->error;
     }
     $stmt->close();
 }
-$conn->close();
 
 
 

@@ -1,78 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>contacts</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
-    <!--using inline css to style only this page-->
-   
-    <body>
-       
-        <nav class="navbar"> 
-            <div class = "logo">Diamond/Gold </div>
-            <ul >
-                <li><a href="index.html">Home</a></li>
-                <li><a  href="products.html"> Shop</a></li>
-                <li><a  href="contacts.html"> Contact</a></li>
-                <button type="button"><a href="login.html">Sign-in</a></button>
-               
-            </ul>
-    
-           
-          
-           </nav>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Diamond/Gold</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <li><button type="button"><a href="login.html">Sign-in</a></button></li>
+        </ul>
+    </nav>
 
-       <!--Adding contact information using classes-->
-       <div class="contDetails">
-        <h2>Contact with us </h2>
-        
-       </div>
-        <div class="contBox">
-            <div class="contLeft">
-                <!--using form refereces...........-->
-               <h3>sent us your request</h3>
-               <!--adding form-->
-               <form>
-                    <div class="row">
-                        <div class="group">
-                            <label> Name</label>
-                            <input type="text" placeholder="Your Name">
-
-                        </div>
-
+    <div class="contDetails">
+        <h2>Contact with us</h2>
+    </div>
+    <div class="contBox">
+        <div class="contLeft">
+            <h3>Send us your request</h3>
+            <form action="database/process_form.php" method="POST">
+                <div class="row">
+                    <div class="group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Your Name" name="name" required>
                     </div>
-                    <div class="row">
-                        <div class="group">
-                            <label> phone</label>
-                            <input type="text" placeholder="+27 71 9081 888">
-                            
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="group">
+                        <label>Phone</label>
+                        <input type="text" placeholder="+27 71 9081 888" name="phone" required>
                     </div>
-                    <div class="row">
-                       <div class="group">
-                           <label> email</label>
-                           <input type="email" placeholder="email@gmail.com">
-                           
-                       </div>
-
+                </div>
+                <div class="row">
+                    <div class="group">
+                        <label>Email</label>
+                        <input type="email" placeholder="email@gmail.com" name="email" required>
                     </div>
-                    <label>Message</label>
-                    <textarea rows="4" placeholder="Your message"></textarea> 
-                    <input type="submit" value="Submit">
-                    
-               </form>
-            </div>
-            <!--adiing contact information : needs more research-->
-            <div class="contRight">
-                <h3>connect with us</h3>
-                <p>Email: </p>
-                <p>Diamond@gmail.com</p>
-                <p>phone:</p>
-                <p>+27 71 9081 888</p>
-                <h2></h2>
-            </div>
+                </div>
+                <label>Message</label>
+                <textarea rows="4" placeholder="Your message" name="message" required></textarea> 
+                <button type="submit">Submit</button>
+            </form>
         </div>
-
-        
-
-    </body>
+        <div class="contRight">
+            <h3>Connect with us</h3>
+            <p>Email:</p>
+            <p>Diamond@gmail.com</p>
+            <p>Phone:</p>
+            <p>+27 71 9081 888</p>
+        </div>
+    </div>
+</body>
 </html>

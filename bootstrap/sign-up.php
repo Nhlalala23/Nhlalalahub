@@ -47,7 +47,7 @@
 
             <div class="mb-3 container"> 
                 <label for="password1">Password</label>
-                <input type="password" name="pwd" id="paswd" placeholder="Create your password"
+                <input type="password" name="paswd" id="paswd" placeholder="Create your password"
                 required minlength="8" pattern ="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 title ="must contain at least one number,one uppercase letter,one lowercase letter,and at least 8 characters.">
                 <div class ="valid-feedback">Valid.</div> 

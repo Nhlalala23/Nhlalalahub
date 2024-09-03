@@ -4,58 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internal Navigation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
-        section {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
+    
 </head>
 <body>
 
-    <nav>
+    <nav class="navbar"> 
+        <div class = "logo">Diamond/Gold</div>
         <ul>
-            <li><a href="#section1">Section 1</a></li>
-            <li><a href="#section2">Section 2</a></li>
-            <li><a href="#section3">Section 3</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <button type="button"><a href="login.html">Sign-in</a></button>
         </ul>
     </nav>
 
-    <section id="section1">
-        <h2>Section 1</h2>
-        <p>This is the content of Section 1.</p>
-    </section>
+    <h2>Your Cart</h2>
+    <table id="cart-table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </tbody>
+    </table>
 
-    <section id="section2">
-        <h2>Section 2</h2>
-        <p>This is the content of Section 2.</p>
-    </section>
+    <div class="total">
+        <p id="cart-total">Total: R0</p>
+    </div>
+    <div class="checkout">
+        <button onclick="checkout()">Checkout</button>
+    </div>
 
-    <section id="section3">
-        <h2>Section 3</h2>
-        <p>This is the content of Section 3.</p>
-    </section>
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="cart.js"></script>
+</body>
+</html>
 
 </body>
 </html>
